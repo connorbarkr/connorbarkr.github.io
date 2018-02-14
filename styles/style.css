@@ -20,7 +20,7 @@ body {
 
 #navbar {
   height: 10vh;
-  width: 90%;
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -34,16 +34,18 @@ body {
     height: 50px;
     margin: 20px; }
   #navbar #hamburger {
+    margin-left: 20px;
     width: 30px;
     height: 15px;
     transition: ease 0.3s; }
   #navbar #envelope {
+    margin-right: 20px;
     width: 30px;
     height: 15px; }
 
 #main {
   height: 90vh;
-  width: 90%;
+  width: 100%;
   background-image: url("../assets/background.jpg");
   background-size: cover;
   background-position: center;
