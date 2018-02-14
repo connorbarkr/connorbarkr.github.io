@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400")
+
+*
+  margin: 0
+  padding: 0
+
+body
+  margin: 0
+  font-family: Raleway
+  font-size: 17px
+  line-height: 1.6
+  background-color: #ededed
+
+#landing
+  height: 100vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#navbar
+  height: 10vh
+  width: 90%
+  margin-bottom: 10px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #4d4d4d
+  user-select: none
+  overflow: hidden
+
+  #monogram
+    width: 50px
+    height: 50px
+    margin: 20px
+
+  #hamburger
+    width: 30px
+    height: 15px
+    transition: ease .3s
+
+  #envelope
+    width: 30px
+    height: 15px
+
+#main
+  height: 90vh
+  width: 90%
+  background-image: url('../assets/background.jpg')
+  background-size: cover
+  background-position: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  user-select: none
+
+  h1
+    color: white
+    font-weight: 300
+    padding: 0
+    margin: 0
+
+  p
+    word-spacing: 1rem
+    color: white
+
+  span
+    transition: ease .25s
+
+    &:hover
+      color: #cccccc
+
+
+@media only screen and (min-width: 768px)
+  #navbar
+    height: 20vh
+    width: 90%
+    display: flex
+    margin-bottom: 20px
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #4d4d4d
+    user-select: none
+    overflow: hidden
+
+    #monogram
+      width: 100px
+      height: 100px
+      margin: 20px
+
+    #hamburger
+      width: 40px
+      height: 20px
+      transition: ease .3s
+
+    #envelope
+      width: 50px
+      height: 26px
+
+  #main
+    height: 80vh
+    width: 90%
+    background-image: url('../assets/background.jpg')
+    background-size: cover
+    background-position: center
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    user-select: none
+
+    h1
+      color: white
+      font-weight: 300
+      margin: 0
+
+    p
+      word-spacing: 1rem
+      color: white
+
+    span
+      transition: ease .25s
+
+      &:hover
+        color: #cccccc

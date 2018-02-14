@@ -42,7 +42,8 @@ body, html {
     color: white;
     word-spacing: 1rem;
     font-size: 25px;
-    user-select: none; }
+    user-select: none;
+    word-wrap: break-word; }
   #showcase h1 {
     color: white;
     font-weight: 300;
