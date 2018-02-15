@@ -10,8 +10,18 @@ body {
   line-height: 1.6;
   background-color: #ededed; }
 
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0; }
+
 #main {
-  transition: margin-left 0.5s; }
+  transition: margin-left 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 #landing {
   height: 100vh;
@@ -56,10 +66,7 @@ body {
   text-align: center;
   user-select: none; }
   #center h1 {
-    color: white;
-    font-weight: 300;
-    padding: 0;
-    margin: 0; }
+    color: white; }
   #center p {
     word-spacing: 1rem;
     color: white; }
@@ -67,6 +74,52 @@ body {
     transition: ease 0.25s; }
     #center span:hover {
       color: #cccccc; }
+
+#about {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4d4d4d;
+    margin: 20px; }
+
+#headshot {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px; }
+
+#image2 {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../assets/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#projects {
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#tictactoe {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px; }
 
 .sidenav {
   height: 100%;
@@ -83,11 +136,11 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s; }
     .sidenav a:hover {
-      color: #f1f1f1; }
+      color: #4d4d4d; }
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -95,57 +148,50 @@ body {
     font-size: 36px;
     margin-left: 50px; }
     .sidenav .closebtn:hover {
-      color: #f1f1f1; }
+      color: #4d4d4d; }
+
+.parallax {
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed; }
 
 @media only screen and (min-width: 768px) {
   #navbar {
     height: 20vh;
     width: 90%;
-    display: flex;
     margin-bottom: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #4d4d4d;
-    user-select: none;
-    overflow: hidden; }
+    border-bottom: 1px solid #4d4d4d; }
     #navbar #monogram {
       width: 100px;
-      height: 100px;
-      margin: 20px; }
+      height: 100px; }
     #navbar #hamburger {
-      margin-left: 20px;
       width: 40px;
       height: 20px; }
     #navbar #envelope {
-      margin-right: 20px;
       width: 40px;
       height: 20px; }
 
   #center {
     height: 80vh;
     width: 90%;
-    background-image: url("../assets/background.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    user-select: none; }
-    #center h1 {
-      color: white;
-      font-weight: 300;
-      margin: 0; }
-    #center p {
-      word-spacing: 1rem;
-      color: white; }
-    #center span {
-      transition: ease 0.25s; }
-      #center span:hover {
-        color: #cccccc; }
+    margin-top: 20px; }
+
+  #about {
+    width: 90%;
+    margin: 0 20px; }
+
+  #headshot {
+    width: 250px;
+    height: 250px; }
+
+  #image2 {
+    width: 90%; }
+
+  #projects {
+    width: 90%; }
+    #projects #tictactoe {
+      height: 200px;
+      width: 200px; }
 
   .sidenav {
     padding-top: 60px; }

@@ -20,31 +20,51 @@
                                 programmer">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
   <title>Connor Barker | Welcome</title>
 </head>
 
 <body>
-  <script src="scripts/script.js"></script>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Experience</a>
-    <a href="#">Contact</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#" onclick="closeNav()">Experience</a>
+    <a href="#" onclick="closeNav()">Contact</a>
   </div>
 
   <div id="main">
     <header id="landing">
       <div id="navbar">
-        <img id="hamburger" onclick="openNav()" src="assets/hamburger-black.png" alt="hamburger">
-        <img id="monogram" src="assets/monogram-black.png" alt="monogram">
-        <img id="envelope" src="assets/envelope-black.png" alt="envelope">
+        <img onclick="openNav()" src="assets/hamburger-black.png" alt="hamburger" id="hamburger">
+        <img src="assets/monogram-black.png" alt="monogram" id="monogram">
+        <img src="assets/envelope-black.png" alt="envelope" id="envelope">
       </div>
-      <div id="center">
+      <div id="center" class="parallax">
         <h1>CONNOR BARKER</h1>
         <p><span>student.</span> <span>developer.</span> <span>creator.</span></p>
       </div>
     </header>
+
+    <section id="about">
+      <img src="assets/headshot.jpg" alt="headshot" id="headshot">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ut ipsum minima qui laborum at totam labore unde fuga nulla. Quos, laborum officiis vero voluptates eum a cum fugit, deserunt repudiandae delectus earum explicabo tempore rem provident
+        iusto consequuntur omnis sed nam autem laboriosam dolore asperiores quod est. Ullam, dolor!</p>
+    </section>
+
+    <section id="image2" class="parallax">
+      <h1>PROJECTS</h1>
+    </section>
+
+    <section id="projects">
+      <img src="assets/tictactoe-black.png" alt="tictactoe" id="tictactoe">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique quam
+        maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur aut laborum
+        cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in. Ad delectus tenetur excepturi maiores, alias nostrum autem, deserunt eaque iusto error ipsum ab non libero corporis, fuga ea minus fugiat veritatis ut ipsa
+        dolorum.
+      </p>
+    </section>
   </div>
 </body>
 
