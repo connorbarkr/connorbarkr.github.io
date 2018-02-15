@@ -176,7 +176,6 @@ h1 {
 
   #center {
     height: 80vh;
-    width: 90%;
     margin-top: 20px; }
 
   #about {
@@ -186,9 +185,6 @@ h1 {
   #headshot {
     width: 250px;
     height: 250px; }
-
-  #image2 {
-    width: 90%; }
 
   #projects {
     width: 90%;
