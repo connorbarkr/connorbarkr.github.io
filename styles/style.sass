@@ -11,6 +11,9 @@ body
   line-height: 1.6
   background-color: #ededed
 
+#main
+  transition: backgroundColor .5s
+
 #landing
   height: 100vh
   width: 100%
@@ -44,7 +47,7 @@ body
     width: 30px
     height: 15px
 
-#main
+#center
   height: 90vh
   width: 100%
   background-image: url('../assets/background.jpg')
@@ -73,6 +76,38 @@ body
     &:hover
       color: #cccccc
 
+.sidenav
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  background-color: #111
+  overflow-x: hidden
+  padding-top: 15px
+  transition: 0.5s
+
+  a
+    padding: 8px 8px 8px 32px
+    text-decoration: none
+    font-size: 18px
+    color: #818181
+    display: block
+    transition: 0.3s
+
+    &:hover
+      color: #f1f1f1
+
+  .closebtn
+    position: absolute
+    top: 0
+    right: 25px
+    font-size: 36px
+    margin-left: 50px
+
+    &:hover
+      color: #f1f1f1
 
 @media only screen and (min-width: 768px)
   #navbar
@@ -99,10 +134,10 @@ body
 
     #envelope
       margin-right: 20px
-      width: 50px
-      height: 26px
+      width: 40px
+      height: 20px
 
-  #main
+  #center
     height: 80vh
     width: 90%
     background-image: url('../assets/background.jpg')
@@ -130,3 +165,9 @@ body
 
       &:hover
         color: #cccccc
+
+  .sidenav
+    padding-top: 60px
+
+    a
+      font-size: 25px
