@@ -155,6 +155,9 @@ h1 {
   position: relative;
   background-attachment: fixed; }
 
+.project {
+  margin: 20px 0; }
+
 @media only screen and (min-width: 768px) {
   #navbar {
     height: 20vh;
@@ -188,10 +191,15 @@ h1 {
     width: 90%; }
 
   #projects {
-    width: 90%; }
-    #projects #tictactoe {
-      height: 200px;
-      width: 200px; }
+    width: 90%;
+    flex-direction: row; }
+
+  #tictactoe {
+    height: 150px;
+    width: 150px; }
+
+  .project {
+    margin: 20px; }
 
   .sidenav {
     padding-top: 60px; }
