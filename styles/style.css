@@ -28,6 +28,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  #main a {
+    text-decoration: none;
+    color: black; }
 
 #landing {
   height: 100vh;
@@ -115,7 +118,7 @@ h2 {
 
 #projects {
   height: 100%;
-  margin: 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,10 +144,11 @@ h2 {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     display: block;
-    transition: 0.3s; }
+    transition: 0.3s;
+    font-weight: 300; }
     .sidenav a:hover {
       color: #4d4d4d; }
   .sidenav .closebtn {
@@ -206,6 +210,9 @@ h2 {
   .sidenav {
     padding-top: 60px; }
     .sidenav a {
-      font-size: 25px; } }
+      font-size: 25px; }
+
+  .closebtn {
+    font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
