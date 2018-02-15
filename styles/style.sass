@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400")
+@import 'form-style.sass'
 
 *
   margin: 0
@@ -26,8 +27,18 @@ h2
 #center, #image2, #image3, #image4
   background-size: cover
   background-position: center
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: center
   text-align: center
@@ -39,8 +50,18 @@ h2
 
 #main
   transition: margin-left 0.5s
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: center
 
@@ -59,8 +80,18 @@ h2
 #navbar
   height: 10vh
   width: 100%
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
   flex-direction: row
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: space-between
   align-items: center
   user-select: none
@@ -75,6 +106,7 @@ h2
     margin-left: 20px
     width: 30px
     height: 15px
+    cursor: pointer
 
   #envelope
     margin-right: 20px
@@ -99,8 +131,18 @@ h2
 #about
   height: 40%
   width: 100%
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: center
   text-align: center
@@ -134,9 +176,18 @@ h2
 
 #projects
   height: 100%
-  margin-top: 20px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: center
   text-align: center
@@ -148,9 +199,19 @@ h2
 
 #experiences
   height: 100%
-  margin-top: 20px
+  margin-top: 10px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
   justify-content: center
   align-items: center
   text-align: center
@@ -196,7 +257,7 @@ h2
   background-attachment: scroll
 
 .project
-  margin: 20px 0
+  margin: 20px 20px
 
 @media only screen and (min-width: 768px)
 
