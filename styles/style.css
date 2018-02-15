@@ -116,7 +116,7 @@ h1 {
   align-items: center;
   text-align: center; }
 
-#tictactoe {
+#projectImage {
   height: 100px;
   width: 100px;
   margin-bottom: 10px; }
@@ -194,7 +194,7 @@ h1 {
     width: 90%;
     flex-direction: row; }
 
-  #tictactoe {
+  #projectImage {
     height: 150px;
     width: 150px; }
 
