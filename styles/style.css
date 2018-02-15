@@ -11,7 +11,7 @@ body {
   background-color: #ededed; }
 
 #main {
-  transition: backgroundColor 0.5s; }
+  transition: margin-left 0.5s; }
 
 #landing {
   height: 100vh;
