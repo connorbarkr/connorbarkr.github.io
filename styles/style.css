@@ -22,7 +22,7 @@ h2 {
   font-size: 23px;
   margin-bottom: 10px; }
 
-#center, #image2, #image3 {
+#center, #image2, #image3, #image4 {
   background-size: cover;
   background-position: center;
   display: flex;
@@ -31,6 +31,9 @@ h2 {
   align-items: center;
   text-align: center;
   user-select: none; }
+
+#center h1, #image3 h1, #image4 h1 {
+  color: white; }
 
 #main {
   transition: margin-left 0.5s;
@@ -76,8 +79,6 @@ h2 {
   height: 90vh;
   width: 100%;
   background-image: url("../assets/background.jpg"); }
-  #center h1 {
-    color: white; }
   #center p {
     word-spacing: 1rem;
     color: white; }
@@ -115,8 +116,11 @@ h2 {
   width: 100%;
   height: 50vh;
   background-image: url("../assets/img3.jpg"); }
-  #image3 h1 {
-    color: white; }
+
+#image4 {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../assets/img4.jpg"); }
 
 #projects {
   height: 100%;
@@ -131,6 +135,15 @@ h2 {
   height: 100px;
   width: 100px;
   margin-bottom: 10px; }
+
+#experiences {
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .sidenav {
   height: 100%;
@@ -165,7 +178,7 @@ h2 {
 .parallax {
   background-repeat: no-repeat;
   position: relative;
-  background-attachment: fixed; }
+  background-attachment: scroll; }
 
 .project {
   margin: 20px 0; }
@@ -206,6 +219,10 @@ h2 {
     height: 150px;
     width: 150px; }
 
+  #experiences {
+    width: 90%;
+    flex-direction: row; }
+
   .project {
     margin: 20px; }
 
@@ -213,6 +230,9 @@ h2 {
     padding-top: 60px; }
     .sidenav a {
       font-size: 25px; }
+
+  .parallax {
+    background-attachment: fixed; }
 
   .closebtn {
     font-size: 50px; } }
