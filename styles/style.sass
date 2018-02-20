@@ -12,7 +12,7 @@ body
   line-height: 1.6
   background-color: #ededed
 
-h1, h2
+h1, h2, h4
   font-weight: 300
   padding: 0
   margin: 0
@@ -22,6 +22,10 @@ h1
 
 h2
   font-size: 23px
+  margin-bottom: 10px
+
+h4
+  font-size: 18px
   margin-bottom: 10px
 
 img
@@ -47,6 +51,22 @@ footer
 
     &:hover, &:focus
       color: black
+
+button
+  color: grey
+  margin: 20px 0
+  background: transparent
+  padding: 10px 20px
+  border: grey 1px solid
+  font-size: 18px
+  font-weight: 300
+  transition: ease .25s
+
+  &:hover, &:focus
+    color: #ededed
+    background-color: grey
+    outline: none
+
 
 #center, #image2, #image3, #image4
   background-size: cover
@@ -137,6 +157,9 @@ footer
     line-height: 1.6
     color: #4d4d4d
     margin: 20px
+
+  button
+    margin-top: 0
 
 #headshot
   border-radius: 50%
@@ -231,6 +254,17 @@ footer
 .project_wrapper
   width: 100%
   float: left
+
+.experience
+  margin: 20px 20px
+  transition: ease .25s
+  width: 90%
+
+  span
+    user-select: none
+
+    &:hover
+      color: #4d4d4d
 
 @media only screen and (min-width: 768px)
 

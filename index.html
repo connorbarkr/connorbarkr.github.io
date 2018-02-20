@@ -50,8 +50,14 @@
 
     <section id="about">
       <img src="assets/headshot.jpg" alt="headshot" id="headshot">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ut ipsum minima qui laborum at totam labore unde fuga nulla. Quos, laborum officiis vero voluptates eum a cum fugit, deserunt repudiandae delectus earum explicabo tempore rem provident
-        iusto consequuntur omnis sed nam autem laboriosam dolore asperiores quod est. Ullam, dolor!</p>
+      <p>Hi! I'm Connor, an Honours Computer Engineering student at the University of Waterloo. I started writing code when I was 11, when I build my first JavaScript text adventure game! Since then, I've been busy. I learn about new languages, frameworks,
+        and tools as often as I can! Being a developer has been my dream for years now, and I'm proud to say that I'm making it come true. I work in front and backend code, although the latter is my specialty. Think I'd be a good fit for your company?
+        Have freelance work that needs doing? Just want to say hi? Contact me at the bottom of this page, or view my resume using the button below!</p>
+      <a href="assets/cpbarker_resume_v9.pdf">
+        <button>
+          RESUME
+        </button>
+      </a>
     </section>
 
     <section id="image2" class="parallax">
@@ -61,13 +67,13 @@
     <section id="projects">
       <div class="project">
         <div class="project_wrapper">
-          <a href="https://github.com/connorbarkr/totallynotspaceinvaders">
-            <img src="assets/alien.png" alt="alien" id="projectImage">
+          <a href="https://github.com/connorbarkr/AMSAT">
+            <img src="assets/twitter.png" alt="twitter" id="projectImage">
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique
-            quam maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur
-            aut laborum cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in. Ad delectus tenetur excepturi maiores, alias nostrum autem, deserunt eaque iusto error ipsum ab non libero corporis, fuga ea minus fugiat veritatis
-            ut ipsa dolorum.
+          <p>AMSAT is a Twitter bot that I built for fun, the summer before starting university. The Twitter bot in and of itself is fairly boilerplate; it uses RESTful and streaming Twitter API calls to monitor users, and tweet when it wants to. The more
+            impressive feature of the bot is that it uses a Markov generator to construct tweets - which I built from scratch in JavaScript. This was the main challenge of the project, but also the most fun to make! Markov chains can be used in natural
+            language processing, and are what power the predictive text on your phone! I use them to generate tweets from sample text, which I then push to the bot's Twitter account. The whole thing is hosted on Heroku, and runs more or less constantly!
+            It doesn't make much sense (Markov chains aren't really known for their accuracy, as we all know from autocorrect), but it produces some pretty amusing stuff!
           </p>
         </div>
       </div>
@@ -76,21 +82,19 @@
           <a href="https://github.com/CrypticEskimo/laz0rb0i">
             <img src="assets/laser.png" alt="laser" id="projectImage">
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique
-            quam maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur
-            aut laborum cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in.
-          </p>
+          <p>laz0rb0i is an integrated system that relies on user input and a series of motors and mirrors to create a laser light display on a flat surface. It was build using an Omega2, a laser pointer, several motors and mirrors, a motor controller, some
+            home-grown code to run the whole thing, and lots of love. Several challenges were encountered while building laz0rb0i, most of which related to actually controlling the motors using GPIO pins from the Omega2. These were overcome by creating
+            a command-line tool which accepted user input, then translated them into a series of more basic commands the Omega2 could work with. Because the Omega2 is a computer in its own right, the project is run by SSHing into the Omega2 terminal.</p>
         </div>
       </div>
       <div class="project">
         <div class="project_wrapper">
-          <a href="https://github.com/connorbarkr/AMSAT">
-            <img src="assets/twitter.png" alt="twitter" id="projectImage">
+          <a href="https://github.com/connorbarkr/totallynotspaceinvaders">
+            <img src="assets/alien.png" alt="alien" id="projectImage">
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique
-            quam maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur
-            aut laborum cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in. Ad delectus tenetur excepturi maiores, alias nostrum autem, deserunt eaque iusto error ipsum ab non libero corporis, fuga ea minus fugiat veritatis
-            ut ipsa dolorum.
+          <p>This is totally not a remake of Space Invaders for fun. Just kidding! I used pygame to build a remake of this classic arcade game, using custom art to put it all together! Some of the challenges I faced were learning about control schemes; I
+            ended up using "flags" to indicate whether or not an action was currently occurring! I also had to make creative use of the "random" function to generate a new background of stars each game. Saving high scores was also a challenge, although
+            I overcame it using a text file, stored in the same location as the game's code. This was necessary because there's no application that contains the game; it's run using pygame, from the console.
           </p>
         </div>
       </div>
@@ -101,18 +105,22 @@
     </section>
 
     <section id="experiences">
-      <div class="project">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique
-          quam maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur aut
-          laborum cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in. Ad delectus tenetur excepturi maiores, alias nostrum autem, deserunt eaque iusto error ipsum ab non libero corporis, fuga ea minus fugiat veritatis
-          ut ipsa dolorum.
+      <div class="experience">
+        <h2><span>PORTAL</span></h2>
+        <h4>january - april 2018 | developer</h4>
+        <p>I'm currently working on the Portal team, who make the student life application and website 'Portal'. This is Waterloo's home-grown one stop shop for student needs, ranging from class and exam times and locations to news feeds to checking the
+          balance on your student meal card. On the team, I worked on a variety of tasks, including creating the analytics tracker for the app and site from scratch. To do this, I designed the frontend using AngularJS 1.6 and Bootstrap. The backend was
+          written in C#, where I designed several API calls which pull from our database to process information and pass it to the service. The biggest challenges here were learning how to process high volumes of data both correctly and efficiently, and
+          working with clients to better understand their requests, needs, and expectations for the final project.
         </p>
       </div>
-      <div class="project">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, architecto. Incidunt odio, optio nulla quidem laudantium enim repudiandae accusamus labore quis doloribus sed, ad tempore, soluta necessitatibus dignissimos fugit quos similique
-          quam maiores tempora reprehenderit corporis ex earum. Eveniet neque asperiores alias, adipisci libero cumque quisquam laboriosam pariatur hic, nesciunt tempore. Recusandae error fugiat, suscipit aperiam, quidem fuga natus! Incidunt tenetur aut
-          laborum cum iure unde quibusdam dolorem iste neque reiciendis beatae expedita, consequuntur in. Ad delectus tenetur excepturi maiores, alias nostrum autem, deserunt eaque iusto error ipsum ab non libero corporis, fuga ea minus fugiat veritatis
-          ut ipsa dolorum.
+      <div class="experience">
+        <h2><span>COSIMO</span></h2>
+        <h4>july 2014 | intern</h4>
+        <p>Working for Cosimo was my first experience with a development team, working out of an office in Brooklyn. This taught me a lot about the development process, as well as teamwork and communication. Working for the team, I handled database cleanup
+          and helped my boss with a few miscellaneous tasks he was working on as a freelancer. I also developed a pitch to the MTA (the New York Metropolitan Transit Authority), who were potential clients for us. To do this, I used Illustrator to create
+          a map of the NY subway system, highlighting which stations were WiFi-connected and which weren't. I then used this to construct a subway art tour using the app we developed, which was a location-based audio platform that we marketed to museums,
+          historical sites, and other locations which needed location-triggered audio playback.
         </p>
       </div>
     </section>
