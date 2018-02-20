@@ -78,23 +78,6 @@ h4 {
 img {
   user-select: none; }
 
-#footer {
-  height: 5vh;
-  align-items: center;
-  text-align: center;
-  user-select: none; }
-  #footer p {
-    color: grey;
-    font-weight: 300;
-    transition: ease 0.25s; }
-    #footer p:hover, #footer p:focus {
-      color: black; }
-  #footer i {
-    color: grey;
-    transition: ease 0.25s; }
-    #footer i:hover, #footer i:focus {
-      color: black; }
-
 button {
   color: grey;
   margin: 20px 0;
@@ -232,6 +215,25 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center; }
+
+#footer {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  user-select: none; }
+  #footer p {
+    color: grey;
+    font-weight: 300;
+    transition: ease 0.25s; }
+    #footer p:hover, #footer p:focus {
+      color: black; }
+  #footer i {
+    color: grey;
+    transition: ease 0.25s; }
+    #footer i:hover, #footer i:focus {
+      color: black; }
 
 .sidenav {
   height: 100%;
