@@ -95,8 +95,7 @@ button {
     outline: none; }
 
 footer {
-  margin-top: 30px;
-  position: relative;
+  position: fixed;
   min-height: 100%; }
 
 #center, #image2, #image3, #image4 {
