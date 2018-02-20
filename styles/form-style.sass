@@ -1,10 +1,20 @@
-aside
-  border-radius: 3px
-  color: #fff
-  margin-bottom: 2em
-
-textarea
+#contact
   width: 100%
+  height: 40vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+
+#gform
+  width: 100%
+
+#thankyou_message
+  font-weight: 300
+  font-size: 20px
+  text-align: center
+  display: none
 
 .content-head
   font-weight: 400
@@ -14,17 +24,40 @@ textarea
 .is-center
   text-align: center
 
-.button-success
-  color: white
-  border-radius: 4px
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
-  background: rgb(28, 184, 65)
-
-.button-xlarge
-  font-size: 125%
-
 button
-  float: right
+  color: grey
+  margin: 20px 0
+  background: transparent
+  padding: 10px 20px
+  border: grey 1px solid
+  font-size: 18px
+  font-weight: 300
+  transition: ease .25s
 
-#name, #email
-  width: 50%
+  &:hover, &:focus
+    color: #ededed
+    background-color: grey
+    outline: none
+
+textarea
+  resize: vertical
+  min-height: 30px
+
+.name, .email, .message
+  margin: 20px 0
+  width: 100%
+  border: none
+
+#name, #email, #message
+  color: black
+  height: 30px
+  font-size: 18px
+  font-weight: 300
+  background-color: #ededed
+  width: 90%
+  border: none
+  border-bottom: 1px solid #C1C1C1
+
+  &:hover, &:focus
+    outline: none
+    border-bottom: 2px solid grey

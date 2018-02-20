@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
-aside {
-  border-radius: 3px;
-  color: #fff;
-  margin-bottom: 2em; }
+#contact {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
-textarea {
+#gform {
   width: 100%; }
+
+#thankyou_message {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  display: none; }
 
 .content-head {
   font-weight: 400;
@@ -15,20 +25,41 @@ textarea {
 .is-center {
   text-align: center; }
 
-.button-success {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: #1cb841; }
-
-.button-xlarge {
-  font-size: 125%; }
-
 button {
-  float: right; }
+  color: grey;
+  margin: 20px 0;
+  background: transparent;
+  padding: 10px 20px;
+  border: grey 1px solid;
+  font-size: 18px;
+  font-weight: 300;
+  transition: ease 0.25s; }
+  button:hover, button:focus {
+    color: #ededed;
+    background-color: grey;
+    outline: none; }
 
-#name, #email {
-  width: 50%; }
+textarea {
+  resize: vertical;
+  min-height: 30px; }
+
+.name, .email, .message {
+  margin: 20px 0;
+  width: 100%;
+  border: none; }
+
+#name, #email, #message {
+  color: black;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: #ededed;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #C1C1C1; }
+  #name:hover, #name:focus, #email:hover, #email:focus, #message:hover, #message:focus {
+    outline: none;
+    border-bottom: 2px solid grey; }
 
 * {
   margin: 0;
@@ -52,6 +83,26 @@ h1 {
 h2 {
   font-size: 23px;
   margin-bottom: 10px; }
+
+img {
+  user-select: none; }
+
+footer {
+  height: 5vh;
+  align-items: center;
+  text-align: center;
+  user-select: none; }
+  footer p {
+    color: grey;
+    font-weight: 300;
+    transition: ease 0.25s; }
+    footer p:hover, footer p:focus {
+      color: black; }
+  footer i {
+    color: grey;
+    transition: ease 0.25s; }
+    footer i:hover, footer i:focus {
+      color: black; }
 
 #center, #image2, #image3, #image4 {
   background-size: cover;
@@ -158,7 +209,6 @@ h2 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center; }
 
@@ -213,9 +263,14 @@ h2 {
 
 .project {
   margin: 20px 20px;
-  transition: ease 0.25s; }
+  transition: ease 0.25s;
+  width: 90%; }
   .project span:hover {
     color: #4d4d4d; }
+
+.project_wrapper {
+  width: 100%;
+  float: left; }
 
 @media only screen and (min-width: 768px) {
   #navbar {
@@ -258,7 +313,9 @@ h2 {
     flex-direction: row; }
 
   .project {
-    margin: 20px; }
+    margin: 20px;
+    width: 33%;
+    align-self: flex-start; }
 
   .sidenav {
     padding-top: 60px; }
