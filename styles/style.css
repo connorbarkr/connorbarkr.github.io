@@ -94,10 +94,6 @@ button {
     background-color: grey;
     outline: none; }
 
-footer {
-  position: fixed;
-  min-height: 100%; }
-
 #center, #image2, #image3, #image4 {
   background-size: cover;
   background-position: center;
@@ -223,25 +219,26 @@ footer {
   text-align: center; }
 
 #footer {
-  height: 5vh;
-  position: absolute;
-  bottom: 0;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  position: fixed;
+  bottom: 0;
   text-align: center;
   user-select: none; }
-  #footer p {
+  footer p {
     color: grey;
     font-weight: 300;
     transition: ease 0.25s; }
-    #footer p:hover, #footer p:focus {
+    footer p:hover, footer p:focus {
       color: black; }
-  #footer i {
+  footer i {
     color: grey;
     transition: ease 0.25s; }
-    #footer i:hover, #footer i:focus {
+    footer i:hover, footer i:focus {
       color: black; }
 
 .sidenav {
@@ -298,11 +295,6 @@ footer {
     user-select: none; }
     .experience span:hover {
       color: #4d4d4d; }
-
-.wrapper {
-  min-height: 100%;
-  position: relative;
-  padding-bottom: 90px; }
 
 @media only screen and (min-width: 768px) {
   #navbar {
