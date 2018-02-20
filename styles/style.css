@@ -224,6 +224,9 @@ footer {
 
 #footer {
   height: 5vh;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,6 +298,11 @@ footer {
     user-select: none; }
     .experience span:hover {
       color: #4d4d4d; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 90px; }
 
 @media only screen and (min-width: 768px) {
   #navbar {
