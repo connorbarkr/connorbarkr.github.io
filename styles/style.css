@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 #contact {
   width: 100%;
   height: 100%;
@@ -19,7 +19,7 @@
 }
 
 #gform {
-  margin-top: 20px;
+  margin-top: 10;
   width: 100%;
 }
 
@@ -78,7 +78,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: Raleway;
+  font-family: Monserrat;
   font-size: 17px;
   line-height: 1.6;
   background-color: #ededed;
