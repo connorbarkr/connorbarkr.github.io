@@ -1,4 +1,4 @@
-.sass-cache
-.style.css.map
-.editorconfig
+*.sass-cache
+*.style.css.map
+*.editorconfig
 theme1
