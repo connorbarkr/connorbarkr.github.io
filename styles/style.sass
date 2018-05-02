@@ -47,7 +47,7 @@ button
     outline: none
 
 
-#center, #image2, #image3, #image4
+#landing, #image2, #image3, #image4
   background-size: cover
   background-position: center
   display: flex
@@ -57,7 +57,7 @@ button
   text-align: center
   user-select: none
 
-#center, #image3, #image4
+#landing, #image3, #image4
 
   h1
     color: white
@@ -80,6 +80,7 @@ button
   flex-direction: column
   justify-content: center
   align-items: center
+  background-image: url('../assets/background.jpg')
 
 #navbar
   height: 10vh
@@ -90,11 +91,8 @@ button
   align-items: center
   user-select: none
   overflow: hidden
-
-  #monogram
-    width: 50px
-    height: 50px
-    margin: 20px
+  top: 0 !important
+  position: absolute
 
   #hamburger
     margin-left: 20px
@@ -107,11 +105,7 @@ button
     width: 30px
     height: 15px
 
-#center
-  height: 90vh
-  width: 100%
-  background-image: url('../assets/background.jpg')
-
+#landing
   p
     word-spacing: 1rem
     color: white
@@ -181,6 +175,9 @@ button
   justify-content: center
   align-items: center
   text-align: center
+
+#contact
+  margin-top: 20px
 
 #footer
   padding: 0
@@ -278,24 +275,14 @@ button
   #navbar
     height: 20vh
     width: 90%
-    margin-bottom: 20px
-    border-bottom: 1px solid #CCCCCC
-
-    #monogram
-      width: 100px
-      height: 100px
 
     #hamburger
-      width: 40px
-      height: 20px
+      width: 60px
+      height: 30px
 
     #envelope
-      width: 40px
-      height: 20px
-
-  #center
-    height: 80vh
-    margin-top: 20px
+      width: 60px
+      height: 30px
 
   #about
     width: 90%

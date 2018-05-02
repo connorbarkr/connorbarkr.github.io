@@ -129,7 +129,7 @@ button:hover, button:focus {
   outline: none;
 }
 
-#center, #image2, #image3, #image4 {
+#landing, #image2, #image3, #image4 {
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -152,7 +152,7 @@ button:hover, button:focus {
   user-select: none;
 }
 
-#center h1, #image3 h1, #image4 h1 {
+#landing h1, #image3 h1, #image4 h1 {
   color: white;
 }
 
@@ -195,6 +195,7 @@ button:hover, button:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-image: url("../assets/background.jpg");
 }
 
 #navbar {
@@ -218,12 +219,8 @@ button:hover, button:focus {
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
-}
-
-#navbar #monogram {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
+  top: 0 !important;
+  position: absolute;
 }
 
 #navbar #hamburger {
@@ -239,23 +236,17 @@ button:hover, button:focus {
   height: 15px;
 }
 
-#center {
-  height: 90vh;
-  width: 100%;
-  background-image: url("../assets/background.jpg");
-}
-
-#center p {
+#landing p {
   word-spacing: 1rem;
   color: white;
 }
 
-#center span {
+#landing span {
   -webkit-transition: ease 0.25s;
   transition: ease 0.25s;
 }
 
-#center span:hover {
+#landing span:hover {
   color: #cccccc;
 }
 
@@ -352,6 +343,10 @@ button:hover, button:focus {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+
+#contact {
+  margin-top: 20px;
 }
 
 #footer {
@@ -487,24 +482,14 @@ button:hover, button:focus {
   #navbar {
     height: 20vh;
     width: 90%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #CCCCCC;
-  }
-  #navbar #monogram {
-    width: 100px;
-    height: 100px;
   }
   #navbar #hamburger {
-    width: 40px;
-    height: 20px;
+    width: 60px;
+    height: 30px;
   }
   #navbar #envelope {
-    width: 40px;
-    height: 20px;
-  }
-  #center {
-    height: 80vh;
-    margin-top: 20px;
+    width: 60px;
+    height: 30px;
   }
   #about {
     width: 90%;

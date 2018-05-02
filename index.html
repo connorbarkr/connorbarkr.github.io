@@ -36,6 +36,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts/script.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <title>Connor Barker | Welcome</title>
 </head>
 
@@ -49,16 +50,13 @@
   </div>
 
   <div id="main">
-    <header id="landing">
+    <header id="landing" class="parallax">
       <div id="navbar">
-        <img onclick="openNav()" src="assets/hamburger-black.png" alt="hamburger" id="hamburger">
-        <img src="assets/monogram-black.png" alt="monogram" id="monogram">
-        <a href="#contact"><img src="assets/envelope-black.png" alt="envelope" id="envelope"></a>
+        <img onclick="openNav()" src="assets/hamburger-white.svg" alt="hamburger" id="hamburger">
+        <a href="#contact"><img src="assets/envelope-white.svg" alt="envelope" id="envelope"></a>
       </div>
-      <div id="center" class="parallax">
-        <h1>CONNOR BARKER</h1>
-        <p><span>student.</span> <span>developer.</span> <span>creator.</span></p>
-      </div>
+      <h1>CONNOR BARKER</h1>
+      <p><span>student.</span> <span>developer.</span> <span>creator.</span></p>
     </header>
 
     <section id="about">
@@ -81,10 +79,10 @@
       <div class="project">
         <div class="project_wrapper">
           <a href="https://github.com/connorbarkr/AMSAT">
-            <img src="assets/twitter.png" alt="twitter" id="projectImage">
+            <img src="assets/twitter.svg" alt="twitter" id="projectImage">
           </a>
-          <p>AMSAT is a Twitter bot that I built for fun, the summer before starting university. The Twitter bot in and of itself is fairly boilerplate; it uses RESTful and streaming Twitter API calls to monitor users, and tweet when it wants to. The more
-            impressive feature of the bot is that it uses a Markov generator to construct tweets, which I built from scratch in JavaScript. This was the main challenge of the project, but also the most fun to make! Markov chains can be used in natural
+          <p>AMSAT is a Twitter bot that I built in JavaScript, the summer before starting university. The Twitter bot in and of itself is fairly boilerplate; it uses RESTful and streaming Twitter API calls to monitor users, and tweet when it wants to. The
+            more impressive feature of the bot is that it uses a Markov generator to construct tweets, which I built from scratch in JavaScript. This was the main challenge of the project, but also the most fun to make! Markov chains can be used in natural
             language processing, and are what power the predictive text on your phone. I use them to generate tweets from sample text, which I then push to the bot's Twitter account. The whole thing is hosted on Heroku, and runs more or less constantly.
             It doesn't make much sense (Markov chains aren't really known for their accuracy, as we all know from autocorrect), but it produces some pretty amusing stuff!
           </p>
@@ -93,21 +91,22 @@
       <div class="project">
         <div class="project_wrapper">
           <a href="https://github.com/CrypticEskimo/laz0rb0i">
-            <img src="assets/laser.png" alt="laser" id="projectImage">
+            <img src="assets/laser.svg" alt="laser" id="projectImage">
           </a>
           <p>laz0rb0i is an integrated system that relies on user input and a series of motors and mirrors to create a laser light display on a flat surface. It was built using an Omega2, a laser pointer, several motors and mirrors, a motor controller, some
-            home-grown code to run the whole thing, and lots of love. Several challenges were encountered while building laz0rb0i, most of which related to actually controlling the motors using GPIO pins from the Omega2. These were overcome by creating
+            home-grown C++ code to run the whole thing, and lots of love. Several challenges were encountered while building laz0rb0i, most of which related to actually controlling the motors using GPIO pins from the Omega2. These were overcome by creating
             a command-line tool which accepted user input, then translated it into a series of more basic commands the Omega2 could work with. Because the Omega2 is a computer in its own right, the project is run by SSHing into the Omega2 terminal.</p>
         </div>
       </div>
       <div class="project">
         <div class="project_wrapper">
-          <a href="https://github.com/connorbarkr/totallynotspaceinvaders">
-            <img src="assets/alien.png" alt="alien" id="projectImage">
+          <a href="https://github.com/connorbarkr/ASCIIfy">
+            <img src="assets/asciify.svg" alt="asciify" id="projectImage">
           </a>
-          <p>This is totally not a remake of Space Invaders for fun. Just kidding! I used pygame to build a remake of this classic arcade game, with custom art to put it all together. Some of the challenges I faced were learning about control schemes; I
-            ended up using "flags" to indicate whether or not an action was currently occurring. I also had to make creative use of the "random" function to generate a new background of stars each game. Saving high scores was also a challenge, although
-            I overcame it using a text file, stored in the same location as the game's code. This was necessary because there's no application that contains the game; it's run using pygame, from the console.
+          <p>ASCIIfy is a Chrome extension which transforms all the images on a webpage into ASCII pictures. It's written in JavaScript, and built to use Chrome's extension format. It waits until the user clicks the actionable extension icon, then transforms
+            all the images it can into ASCII art. It does so by reading in pixel data from the image, breaking it up into rectangles of consistent size, then finding the average grayscale value of each square. It then assigns each square an ASCII-encoded
+            character based on its greyscale value. I encountered many challenges while working on this particular project. Working with images is difficult due to cross-origin security protocols, and in order to read the pixel data I needed to find a
+            way around it. Luckily, I was able to find a solution by creating a new image with the same image data, and modifying its 'origin' property manually.
           </p>
         </div>
       </div>
