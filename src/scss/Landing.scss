@@ -1,0 +1,43 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+
+  .landing-left {
+    width: 61.8%;
+    height: 100%;
+
+    h1 {
+      margin: 0rem;
+      margin-right: 1rem;
+      text-align: right;
+      font-size: 7em;
+      font-weight: bold;
+      color: #B71C1C;
+      transition: 0.25s ease;
+    }
+
+    &__scroll {
+      width: 100%;
+    }
+  }
+
+  .landing-right {
+    width: 38.2%;
+    background-color: #B71C1C;
+    height: 100%;
+    transition: 0.25s ease;
+
+    h3 {
+      transform: translateY(5rem);
+      margin: 0rem;
+      margin-left: 1rem;
+      text-align: left;
+      font-size: 2em;
+      color: #FFF;
+    }
+  }
+
+  &__scroll {
+    width: 0%;
+  }
+}
