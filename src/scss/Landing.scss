@@ -1,8 +1,27 @@
+@import '_variables';
+
+.landing-scrolled {
+
+  .landing-right {
+    background-position: left bottom;
+
+    h3 {
+      color: #000;
+    }
+  }
+
+  .landing-cta {
+    p, img {
+      opacity: 0;
+    }
+  }
+}
+
 .landing {
   width: 100vw;
   height: 100vh;
 
-  .landing-left {
+  &-left {
     width: 61.8%;
     height: 100%;
 
@@ -12,18 +31,40 @@
       text-align: right;
       font-size: 7em;
       font-weight: bold;
-      color: #B71C1C;
-      transition: 0.25s ease;
-    }
-
-    &__scroll {
-      width: 100%;
+      color: #C91717;
+      transition: $transition;
     }
   }
 
-  .landing-right {
+  &-cta {
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    transition: $transition;
+
+    p {
+      visibility: visible;
+      opacity: 1;
+      margin: 0rem;
+      font-style: italic;
+      font-size: 1.5em;
+      transition: $transition;
+    }
+
+    img {
+      visibility: visible;
+      opacity: 1;
+      height: 50px;
+      width: 50px;
+      transition: $transition;
+    }
+  }
+
+  &-right {
     width: 38.2%;
-    background-color: #B71C1C;
+    background: linear-gradient(to left, $main-red 50%, $background 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     height: 100%;
     transition: 0.25s ease;
 
@@ -34,10 +75,7 @@
       text-align: left;
       font-size: 2em;
       color: #FFF;
+      transition: $transition;
     }
-  }
-
-  &__scroll {
-    width: 0%;
   }
 }

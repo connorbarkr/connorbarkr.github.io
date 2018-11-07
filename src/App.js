@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './scss/App.scss';
 import './scss/Landing.scss';
 import './scss/Header.scss';
-import Landing from './Landing';
-import Header from './Header'
+import Landing from './components/Landing';
+import Header from './components/Header'
 
 class App extends Component {
   render() {
     return (
-      <div style={{height: '200vh'}}>
+      <div className='main'>
         <Header />
         <Landing />
       </div>
