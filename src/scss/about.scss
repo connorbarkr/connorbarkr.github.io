@@ -1,0 +1,19 @@
+@import '_variables';
+
+.about {
+  img {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+  }
+
+  p {
+    font-family: $detail-font;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 400;
+    line-height: 2em;
+    margin: 0rem;
+    margin-top: 2rem;
+  }
+}

@@ -30,9 +30,11 @@ class Landing extends Component {
           <h3>{"I write code, build tools,"}</h3>
           <h3>{"and create unique projects."}</h3>
         </div>
-        <div className='d-flex flex-column align-items-center landing-cta'>
-          <p>{'more about me'}</p>
-          <img src={downArrow} alt='' />
+        <div className='d-flex justify-content-center landing-cta'>
+          <div className='d-flex flex-column align-items-center'>
+            <p>{'more about me'}</p>
+            <img src={downArrow} alt='' />
+          </div>
         </div>
       </div>
     );

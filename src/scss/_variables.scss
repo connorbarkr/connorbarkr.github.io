@@ -2,4 +2,8 @@ $main-red: #C91717;
 $background: #F4F5F6;
 $line-grey: #707070;
 
-$transition: all 0.2s ease-in-out 0s;
+$transition-fast: all 0.1s ease-in-out 0s;
+$transition-med: all 0.2s ease-in-out 0s;
+
+$detail-font: "Montserrat",
+  sans-serif;

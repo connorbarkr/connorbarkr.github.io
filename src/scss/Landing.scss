@@ -32,31 +32,43 @@
       font-size: 7em;
       font-weight: bold;
       color: #C91717;
-      transition: $transition;
+      transition: $transition-med;
     }
   }
 
   &-cta {
     position: absolute;
-    top: 90vh;
+    top: 85vh;
     width: 100%;
-    transition: $transition;
+    transition: $transition-med;
 
-    p {
-      visibility: visible;
-      opacity: 1;
-      margin: 0rem;
-      font-style: italic;
-      font-size: 1.5em;
-      transition: $transition;
+    div {
+      cursor: pointer;
+      p {
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        margin: 0rem;
+        margin-top: 0.1rem;
+        font-style: italic;
+        font-size: 1.5em;
+        transition: $transition-med;
+      }
+
+      img {
+        visibility: visible;
+        opacity: 1;
+        height: 50px;
+        width: 50px;
+        transition: $transition-med;
+      }
     }
 
-    img {
-      visibility: visible;
-      opacity: 1;
-      height: 50px;
-      width: 50px;
-      transition: $transition;
+    div:hover {
+      p {
+        margin-top: 0rem;
+        margin-bottom: 0.2rem;
+      }
     }
   }
 
@@ -75,7 +87,7 @@
       text-align: left;
       font-size: 2em;
       color: #FFF;
-      transition: $transition;
+      transition: $transition-med;
     }
   }
 }

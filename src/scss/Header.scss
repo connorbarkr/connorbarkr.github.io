@@ -2,7 +2,7 @@
 
 .header-scrolled {
   background-color: $main-red;
-  border: none !important;
+  border-bottom: 1px solid $main-red !important;
 
   .header-content__left {
     a {
@@ -19,14 +19,14 @@
 .header {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 8vh;
   border-bottom: 1px solid $line-grey;
   z-index: 99;
-  transition: $transition;
+  transition: $transition-med;
 
   &-content {
     &__left {
-      transition: $transition;
+      transition: $transition-med;
 
       a {
         color: #000;
@@ -46,7 +46,7 @@
         background-color: #000;
         visibility: hidden;
         transform: scaleX(0);
-        transition: $transition;
+        transition: $transition-med;
       }
 
       a:hover:before {
@@ -65,7 +65,7 @@
         border: 3px solid #FFF;
         border-radius: 0.75rem;
         text-decoration: none;
-        transition: $transition;
+        transition: $transition-med;
       }
 
       a:hover {
