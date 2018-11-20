@@ -72,6 +72,13 @@
         color: $main-red;
         background-color: #FFF;
       }
+
+      &-alt {
+        a {
+          margin: 1rem;
+          border: none;
+        }
+      }
     }
   }
 

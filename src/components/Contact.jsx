@@ -8,9 +8,11 @@ class Landing extends Component {
   }
 
   checkScroll = (event) => {
+    let limit = Math.max( document.body.scrollHeight, document.body.offsetHeight,
+                   document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
     let scrollTop = window.scrollY;
 
-    if (scrollTop > 0) {
+    if (scrollTop < limit - window.innerHeight) {
       this.isScrolled = true;
     } else {
       this.isScrolled = false;
@@ -24,8 +26,8 @@ class Landing extends Component {
     return (
       <div className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
         <div className='d-flex justify-content-center flex-column landing-left'>
-          <h1>{"Hello,"}</h1>
-          <h1>{"I'm Connor."}</h1>
+          <h1>{"Get in touch"}</h1>
+          <h1>{"with me!"}</h1>
         </div>
         <div className='d-flex justify-content-center flex-column landing-right'>
           <h3>{"I write code, build tools,"}</h3>

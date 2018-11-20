@@ -1,0 +1,36 @@
+@import '_variables';
+
+.experience {
+  &-content {
+    font-family: $detail-font;
+    h1 {
+      color: $main-red;
+      font-weight: 400;
+      font-size: 3em;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 1.25em;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .button {
+    &-right {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 2rem;
+      transform: rotate(270deg);
+    }
+    &-left {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 2rem;
+      transform: rotate(90deg);
+    }
+  }
+}

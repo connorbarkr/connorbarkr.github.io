@@ -7,3 +7,18 @@ $transition-med: all 0.2s ease-in-out 0s;
 
 $detail-font: "Montserrat",
   sans-serif;
+
+.icon {
+  &-sm {
+    width: 1rem;
+    height: 1rem;
+  }
+  &-md {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  &-lg {
+    width: 4rem;
+    height: 4rem;
+  }
+}
