@@ -1,5 +1,15 @@
 @import '_variables';
 
+.header-bottom {
+  @extend .header;
+
+  .header-content__right {
+    a {
+      transition: none;
+    }
+  }
+}
+
 .header-scrolled {
   background-color: $main-red;
   border-bottom: 1px solid $main-red !important;
@@ -59,18 +69,20 @@
       padding: 0rem 1rem 0rem 1rem;
 
       a {
+        opacity: 1;
+        visibility: visible;
         color: #FFF;
         padding: 0rem 1rem 0.2rem 1rem;
         font-size: 2em;
         border: 3px solid #FFF;
         border-radius: 0.75rem;
         text-decoration: none;
-        transition: $transition-med;
       }
 
       a:hover {
         color: $main-red;
         background-color: #FFF;
+        transition: $transition-med;
       }
 
       &-alt {

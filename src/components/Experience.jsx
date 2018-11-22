@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import {EXPERIENCES, LOREM} from '../utils/constants';
-import downArrow from '../assets/down-arrow.svg';
+import {EXPERIENCES} from '../utils/constants';
+import arrow from '../assets/down-arrow.svg';
 
-class Projects extends Component {
+class Experience extends Component {
 
   constructor(props) {
     super(props);
@@ -14,6 +14,8 @@ class Projects extends Component {
   }
 
   render() {
+    const {currentExperience} = this.state;
+
     return (
       <div className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
@@ -21,18 +23,19 @@ class Projects extends Component {
           <h1>{"I've worked"}</h1>
         </div>
         <div className='d-flex justify-content-center align-items-center flex-row experience content-right'>
-          <img src={downArrow} className='button-left' alt='left arrow' />
+          <img src={arrow} className='icon-md button-left' alt='left arrow' />
           <div className='d-flex flex-column align-items-center experience-content'>
-            <h1>{'Konrad Group'}</h1>
-            <h2>{'web developer | September - December 2018'}</h2>
-            <p>{LOREM}</p>
-            <p>{LOREM}</p>
+            <h1>{currentExperience.name}</h1>
+            <h2>{`${currentExperience.title} | ${currentExperience.dates}`}</h2>
+            <p>{currentExperience.p1}</p>
+            <p>{currentExperience.p2}</p>
+            <p>{currentExperience.p3}</p>
           </div>
-          <img src={downArrow} className='button-right' alt='right arrow' />
+          <img src={arrow} className='icon-md button-right' alt='right arrow' />
         </div>
       </div>
     );
   }
 }
 
-export default Projects;
+export default Experience;

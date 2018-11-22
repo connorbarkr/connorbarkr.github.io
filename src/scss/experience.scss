@@ -18,19 +18,4 @@
       text-align: center;
     }
   }
-
-  .button {
-    &-right {
-      width: 4rem;
-      height: 4rem;
-      margin-left: 2rem;
-      transform: rotate(270deg);
-    }
-    &-left {
-      width: 4rem;
-      height: 4rem;
-      margin-right: 2rem;
-      transform: rotate(90deg);
-    }
-  }
 }

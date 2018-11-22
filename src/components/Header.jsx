@@ -5,8 +5,15 @@ import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
 
 class Header extends Component {
-  componentDidMount = () => {
-    window.addEventListener('scroll', this.checkScroll);
+  constructor(props) {
+    super(props);
+
+    if (window.location.href.split('/').length < 5) {
+      window.addEventListener('scroll', this.checkScroll);
+    } else {
+      this.isScrolled = true;
+      this.forceUpdate();
+    }
   }
 
   checkScroll = (event) => {
@@ -14,9 +21,10 @@ class Header extends Component {
                    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
     let scrollTop = window.scrollY;
 
-    if (scrollTop > 0 && scrollTop !== limit - window.innerHeight) {
+    if (scrollTop > 0 && !(scrollTop >= limit - window.innerHeight)) {
+      this.isBottom = false;
       this.isScrolled = true;
-    } else if (scrollTop === limit - window.innerHeight) {
+    } else if (scrollTop >= limit - window.innerHeight) {
       this.isBottom = true;
       this.isScrolled = false;
     } else {
@@ -31,7 +39,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className={`d-flex justify-content-between header ${this.isScrolled ? 'header-scrolled' : ''}`}>
+      <div className={`d-flex justify-content-between header ${this.isScrolled ? 'header-scrolled' : this.isBottom ? 'header-bottom' : ''}`}>
         <div className='d-flex align-items-center header-content__left'>
           <a href='/aboutme'>{"about me"}</a>
           <a href='/projects'>{"projects"}</a>
@@ -41,13 +49,13 @@ class Header extends Component {
         {this.isBottom ?
           <div className='d-flex flex-row align-items-left header-content__right-alt'>
             <a href='/contact'>
-              <img className='icon-md' src={github} alt='instagram'/>
+              <img className='icon-sm' src={github} alt='instagram'/>
             </a>
             <a href='/contact'>
-              <img className='icon-md' src={linkedin} alt='instagram'/>
+              <img className='icon-sm' src={linkedin} alt='instagram'/>
             </a>
             <a href='/contact'>
-              <img className='icon-md' src={instagram} alt='instagram'/>
+              <img className='icon-sm' src={instagram} alt='instagram'/>
             </a>
           </div> :
           <div className='d-flex align-items-center header-content__right'>

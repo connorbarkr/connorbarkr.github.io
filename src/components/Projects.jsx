@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import {PROJECTS} from '../utils/constants';
-import {isMobile} from '../utils/detectMobile.js';
+import { PROJECTS } from '../utils/constants';
+import { isMobile } from '../utils/detectMobile.js';
 import tictactoe from '../assets/tictactie.svg';
 
 class Projects extends Component {
@@ -23,10 +24,10 @@ class Projects extends Component {
       <div className='d-flex flex-row justify-content-center align-items-center'>
         {projects.map((project) => {
           return (
-            <div className='d-flex flex-column align-items-center project'>
+            <Link to={`/project/${project.title}`} style={{textDecoration: 'none'}} className='d-flex flex-column align-items-center project'>
               <img src={tictactoe} alt={project.alt}/>
               <h3>{project.title}</h3>
-            </div>
+            </Link>
           );
         })}
       </div>

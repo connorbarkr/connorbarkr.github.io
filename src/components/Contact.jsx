@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import downArrow from '../assets/down-arrow.svg';
+import ContactForm from './ui/ContactForm';
 
 class Landing extends Component {
   componentDidMount = () => {
@@ -30,14 +31,7 @@ class Landing extends Component {
           <h1>{"with me!"}</h1>
         </div>
         <div className='d-flex justify-content-center flex-column landing-right'>
-          <h3>{"I write code, build tools,"}</h3>
-          <h3>{"and create unique projects."}</h3>
-        </div>
-        <div className='d-flex justify-content-center landing-cta'>
-          <div className='d-flex flex-column align-items-center'>
-            <p>{'more about me'}</p>
-            <img src={downArrow} alt='down arrow' />
-          </div>
+          <ContactForm />
         </div>
       </div>
     );

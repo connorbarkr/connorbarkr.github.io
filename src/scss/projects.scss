@@ -3,7 +3,12 @@
 .project {
   margin: 1.5rem;
 
+  h3 {
+    color: #000;
+  }
+
   img {
+    fill: $main-red;
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
