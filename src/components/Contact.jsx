@@ -25,7 +25,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
+      <div ref={this.props.refProp} className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
         <div className='d-flex justify-content-center flex-column landing-left'>
           <h1>{"Get in touch"}</h1>
           <h1>{"with me!"}</h1>

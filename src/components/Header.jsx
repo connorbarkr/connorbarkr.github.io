@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import instagram from '../assets/instagram.svg';
 import github from '../assets/github-logo.svg';
@@ -41,10 +42,10 @@ class Header extends Component {
     return (
       <div className={`d-flex justify-content-between header ${this.isScrolled ? 'header-scrolled' : this.isBottom ? 'header-bottom' : ''}`}>
         <div className='d-flex align-items-center header-content__left'>
-          <a href='/aboutme'>{"about me"}</a>
-          <a href='/projects'>{"projects"}</a>
-          <a href='/experience'>{"experience"}</a>
-          <a href='/resume'>{"resume"}</a>
+          <Link to='/'>{"about me"}</Link>
+          <Link to='/'>{"projects"}</Link>
+          <Link to='/'>{"experience"}</Link>
+          <Link to='/'>{"resume"}</Link>
         </div>
         {this.isBottom ?
           <div className='d-flex flex-row align-items-left header-content__right-alt'>

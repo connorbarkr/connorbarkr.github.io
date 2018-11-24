@@ -3,9 +3,9 @@ import React from 'react';
 import profilePic from '../assets/website_profile.JPG';
 import {INTRO} from '../utils/constants';
 
-const About = () => {
+const About = ({refProp}) => {
   return (
-    <div className='d-flex content align-items-center'>
+    <div ref={refProp} className='d-flex content align-items-center'>
       <div className='d-flex justify-content-center flex-column content-left'>
         <h1>{"a little"}</h1>
         <h1>{"about me"}</h1>

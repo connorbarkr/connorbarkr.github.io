@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import {PROJECTS} from '../utils/constants';
 import { getProjectIndex } from '../utils/projectApi.js';
 import siren from '../assets/siren.svg';
+import code from '../assets/code.svg';
+import how from '../assets/how.svg';
 import arrow from '../assets/down-arrow.svg';
 
 import Header from './Header';
@@ -46,12 +48,12 @@ class ProjectDetail extends Component {
           </div>
           <div className='d-flex flex-row justify-content-between project-detail__body'>
             <div className='d-flex flex-column align-items-center project-detail__body-info'>
-              <img className='icon-lg' src={siren} alt='siren'/>
+              <img className='icon-lg' src={how} alt='how'/>
               <h3>{'what it does'}</h3>
               <p>{project ? project.what : null}</p>
             </div>
             <div className='d-flex flex-column align-items-center project-detail__body-info'>
-              <img className='icon-lg' src={siren} alt='siren'/>
+              <img className='icon-lg' src={code} alt='code'/>
               <h3>{'how it does it'}</h3>
               <p>{project ? project.how : null}</p>
             </div>

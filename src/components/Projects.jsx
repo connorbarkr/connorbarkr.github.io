@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { PROJECTS } from '../utils/constants';
 import { isMobile } from '../utils/detectMobile.js';
-import tictactoe from '../assets/tictactie.svg';
 
 class Projects extends Component {
 
@@ -21,11 +20,11 @@ class Projects extends Component {
 
   renderProjectRow = (projects) => {
     return (
-      <div className='d-flex flex-row justify-content-center align-items-center'>
+      <div ref={this.props.refProp} className='d-flex flex-row justify-content-center align-items-center'>
         {projects.map((project) => {
           return (
             <Link to={`/project/${project.title}`} style={{textDecoration: 'none'}} className='d-flex flex-column align-items-center project'>
-              <img src={tictactoe} alt={project.alt}/>
+              <img src={`/projectImages/${project.img}.svg`} alt={project.img}/>
               <h3>{project.title}</h3>
             </Link>
           );
