@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import instagram from '../assets/instagram.svg';
 import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
+import menu from '../assets/menu.svg';
 
 class Header extends Component {
   constructor(props) {
@@ -41,11 +42,16 @@ class Header extends Component {
   render() {
     return (
       <div className={`d-flex justify-content-between header ${this.isScrolled ? 'header-scrolled' : this.isBottom ? 'header-bottom' : ''}`}>
-        <div className='d-flex align-items-center header-content__left'>
-          <Link to='/'>{"about me"}</Link>
-          <Link to='/'>{"projects"}</Link>
-          <Link to='/'>{"experience"}</Link>
-          <Link to='/'>{"resume"}</Link>
+        <div className='header-content__left'>
+          <div className='d-flex align-items-start header-content__left-mobile'>
+            <img className='icon-md' src={menu} alt='menu'/>
+          </div>
+          <div className='d-flex align-items-center header-content__left-desktop'>
+            <Link to='/aboutMe'>{"about me"}</Link>
+            <Link to='/projects'>{"projects"}</Link>
+            <Link to='/experience'>{"experience"}</Link>
+            <Link to='/resume'>{"resume"}</Link>
+          </div>
         </div>
         {this.isBottom ?
           <div className='d-flex flex-row align-items-left header-content__right-alt'>

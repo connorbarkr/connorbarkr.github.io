@@ -35,18 +35,14 @@ class Projects extends Component {
 
   renderProjects = (projects) => {
     const {isMobile} = this.state;
-    let rowMax;
-    let index;
 
     if (isMobile) {
-      rowMax = 2;
       if (projects.length % 2 === 0) {
         return;
       } else {
         return;
       }
     } else {
-      rowMax = 3;
       if (projects.length % 2 === 0) {
         return (
           <div className='d-flex flex-column'>
