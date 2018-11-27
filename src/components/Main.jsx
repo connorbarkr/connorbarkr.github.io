@@ -19,6 +19,14 @@ class Main extends Component {
     this.contactRef = React.createRef();
   }
 
+  componentDidMount() {
+    this.hashScroll();
+  }
+
+  componentDidUpdate() {
+    this.hashScroll();
+  };
+
   decodeHash = (ref) => {
     switch (ref) {
       case 'about':
@@ -34,7 +42,7 @@ class Main extends Component {
     }
   }
 
-  componentDidUpdate() {
+  hashScroll = () => {
     window.location.hash = window.decodeURIComponent(window.location.hash);
     const hashParts = window.location.hash.split('#');
     let bottom = false;
@@ -46,7 +54,7 @@ class Main extends Component {
       if (hash === 'contact') {bottom = true;}
       scrollTo(this.decodeHash(hash), 'smooth', bottom);
     }
-  };
+  }
 
   render() {
     return (
