@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import '../scss/projects.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import { PROJECTS } from '../utils/constants';
 import { isMobile } from '../utils/detectMobile.js';
 
@@ -20,7 +24,7 @@ class Projects extends Component {
 
   renderProjectRow = (projects) => {
     return (
-      <div ref={this.props.refProp} className='d-flex flex-row justify-content-center align-items-center'>
+      <div className='d-flex flex-row justify-content-center align-items-center'>
         {projects.map((project) => {
           return (
             <Link to={`/project/${project.title}`} style={{textDecoration: 'none'}} className='d-flex flex-column align-items-center project'>
@@ -63,7 +67,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className='d-flex content align-items-center'>
+      <div ref={this.props.refProp} className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
           <h1>{"some of"}</h1>
           <h1>{"my projects"}</h1>

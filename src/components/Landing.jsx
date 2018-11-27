@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import '../scss/landing.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import downArrow from '../assets/down-arrow.svg';
 
 class Landing extends Component {

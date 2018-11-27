@@ -29,12 +29,14 @@
 .header {
   position: fixed;
   width: 100%;
-  height: 8vh;
+  height: 75px;
   border-bottom: 1px solid $line-grey;
   z-index: 99;
   transition: $transition-med;
 
   &-content {
+    width: 100vw;
+
     &__left {
       transition: $transition-med;
 
@@ -111,14 +113,15 @@
 
 @media only screen and (max-width: 960px) {
   .header {
-    height: 12vh;
+    height: 96px;
+    width: 100vw;
     background-color: $main-red;
     border-bottom: none;
 
     &-content {
       &__left {
         &-mobile {
-          display: default;
+          display: block;
           visibility: visible;
           height: 100%;
         }
@@ -126,6 +129,7 @@
           display: none;
           visibility: hidden;
           height: 0px;
+          width: 0px;
         }
       }
     }

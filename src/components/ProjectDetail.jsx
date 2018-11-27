@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import '../scss/project-detail.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import {PROJECTS} from '../utils/constants';
 import { getProjectIndex } from '../utils/projectApi.js';
 import siren from '../assets/siren.svg';

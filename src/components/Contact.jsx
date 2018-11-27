@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import downArrow from '../assets/down-arrow.svg';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import ContactForm from './ui/ContactForm';
 
 class Landing extends Component {

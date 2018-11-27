@@ -1,5 +1,9 @@
 import React from 'react';
 
+import '../scss/about.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import profilePic from '../assets/website_profile.JPG';
 import {INTRO} from '../utils/constants';
 

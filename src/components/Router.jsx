@@ -1,13 +1,13 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import MainRouter from './MainRouter';
+import Main from './Main';
 import ProjectDetail from './ProjectDetail';
 
 const Router = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={MainRouter}/>
+      <Route exact path='/' component={Main}/>
       <Route path='/project/:title' component={ProjectDetail}/>
     </Switch>
   </main>

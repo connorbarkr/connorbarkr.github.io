@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import '../scss/header.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import instagram from '../assets/instagram.svg';
 import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
@@ -47,26 +51,26 @@ class Header extends Component {
             <img className='icon-md' src={menu} alt='menu'/>
           </div>
           <div className='d-flex align-items-center header-content__left-desktop'>
-            <Link to='/aboutMe'>{"about me"}</Link>
-            <Link to='/projects'>{"projects"}</Link>
-            <Link to='/experience'>{"experience"}</Link>
-            <Link to='/resume'>{"resume"}</Link>
+            <Link to='/#about'>{"about me"}</Link>
+            <Link to='/#projects'>{"projects"}</Link>
+            <Link to='/#experience'>{"experience"}</Link>
+            <Link to='/'>{"resume"}</Link>
           </div>
         </div>
         {this.isBottom ?
           <div className='d-flex flex-row align-items-left header-content__right-alt'>
-            <a href='/contact'>
+            <a href=''>
               <img className='icon-sm' src={github} alt='instagram'/>
             </a>
-            <a href='/contact'>
+            <a href=''>
               <img className='icon-sm' src={linkedin} alt='instagram'/>
             </a>
-            <a href='/contact'>
+            <a href=''>
               <img className='icon-sm' src={instagram} alt='instagram'/>
             </a>
           </div> :
           <div className='d-flex align-items-center header-content__right'>
-            <a href='/contact'>{"contact"}</a>
+            <Link to='/#contact'>{"contact"}</Link>
           </div>}
       </div>
     );

@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
 
+import ExperienceCarousel from './ui/ExperienceCarousel';
+
+import '../scss/experience.scss';
+import '../scss/content.scss';
+import '../scss/_variables.scss';
+
 import {EXPERIENCES} from '../utils/constants';
-import arrow from '../assets/down-arrow.svg';
 
 class Experience extends Component {
+  state = {
+    index: 0,
+  };
 
-  constructor(props) {
-    super(props);
+  changeExperience = (direction) => {
+    const {index} = this.state;
+    let newIndex = index;
 
-    this.state = {
-      currentExperience: EXPERIENCES[0],
-    };
+    if (direction === 'next') {
+      newIndex++;
+      if (newIndex === EXPERIENCES.length) {
+        newIndex = 0;
+      }
+    } else {
+      newIndex--;
+      if (newIndex === -1) {
+        newIndex = EXPERIENCES.length - 1;
+      }
+    }
+    this.setState({index: newIndex, currentExperience: EXPERIENCES[newIndex]});
   }
 
   render() {
     const {currentExperience} = this.state;
+    let exp = currentExperience ? currentExperience : EXPERIENCES[0];
 
     return (
       <div ref={this.props.refProp} className='d-flex content align-items-center'>
@@ -22,16 +41,8 @@ class Experience extends Component {
           <h1>{"where"}</h1>
           <h1>{"I've worked"}</h1>
         </div>
-        <div className='d-flex justify-content-center align-items-center flex-row experience content-right'>
-          <img src={arrow} className='icon-md button-left' alt='left arrow' />
-          <div className='d-flex flex-column align-items-center experience-content'>
-            <h1>{currentExperience.name}</h1>
-            <h2>{`${currentExperience.title} | ${currentExperience.dates}`}</h2>
-            <p>{currentExperience.p1}</p>
-            <p>{currentExperience.p2}</p>
-            <p>{currentExperience.p3}</p>
-          </div>
-          <img src={arrow} className='icon-md button-right' alt='right arrow' />
+        <div className='d-flex justify-content-center align-items-center content-right'>
+          <ExperienceCarousel onClick={this.changeExperience} experience={exp}/>
         </div>
       </div>
     );
