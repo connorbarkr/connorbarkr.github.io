@@ -59,7 +59,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Header refs={[this.aboutRef, this.projectsRef, this.experienceRef, this.contactRef]}/>
+        <Header />
         <Landing />
         <About refProp={this.aboutRef}/>
         <Projects refProp={this.projectsRef}/>
