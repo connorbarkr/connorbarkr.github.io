@@ -7,8 +7,8 @@ import ProjectDetail from './ProjectDetail';
 const Router = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Main}/>
-      <Route path='/project/:title' component={ProjectDetail}/>
+      <Route exact path='/' component={Main} />
+      <Route path='/project/:title' component={ProjectDetail} />
     </Switch>
   </main>
 )

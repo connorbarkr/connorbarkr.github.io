@@ -25,6 +25,7 @@ class ProjectDetail extends Component {
   }
 
   componentDidMount() {
+    window.previousLocation = 'project';
     this.getProjectDetails(this.props);
   }
 
@@ -44,7 +45,7 @@ class ProjectDetail extends Component {
         <Header />
         <div className='d-flex flex-column align-items-center project-detail'>
           <div className='d-flex flex-row justify-content-between align-items-bottom project-detail__header'>
-            <Link to='/' style={{textDecoration: 'none'}} className='d-flex flex-row justify-content project-detail__header-back'>
+            <Link to='/#projects' style={{textDecoration: 'none'}} className='d-flex flex-row justify-content project-detail__header-back'>
               <img src={arrow} className='icon-xs button-left' alt='left arrow' />
               <p>{'back to projects'}</p>
             </Link>

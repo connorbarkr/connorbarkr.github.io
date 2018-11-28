@@ -43,6 +43,11 @@ class Main extends Component {
   }
 
   hashScroll = () => {
+    let behavior = 'smooth';
+    if (window.previousLocation === 'project') {
+      behavior = 'auto';
+      window.previousLocation = 'main';
+    }
     window.location.hash = window.decodeURIComponent(window.location.hash);
     const hashParts = window.location.hash.split('#');
     let bottom = false;
@@ -52,7 +57,7 @@ class Main extends Component {
         hash = hashParts.slice(-1)[0];
       }
       if (hash === 'contact') {bottom = true;}
-      scrollTo(this.decodeHash(hash), 'smooth', bottom);
+      scrollTo(this.decodeHash(hash), behavior, bottom);
     }
   }
 
