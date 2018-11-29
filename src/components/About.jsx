@@ -11,10 +11,12 @@ const About = ({refProp}) => {
   return (
     <div ref={refProp} className='d-flex content align-items-center'>
       <div className='d-flex justify-content-center flex-column content-left'>
-        <h1>{"a little"}</h1>
-        <h1>{"about me"}</h1>
+        <h1 className='d-flex flex-column'>
+          <span>{"a little"}</span>
+          <span>{"about me"}</span>
+        </h1>
       </div>
-      <div className='d-flex justify-content-center align-items-center flex-column content-right about'>
+      <div className='d-flex align-items-center flex-column content-right about'>
         <img src={profilePic} alt='Profile'/>
         <p>{INTRO}</p>
       </div>

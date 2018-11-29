@@ -7,7 +7,7 @@ import Router from './components/Router';
 class App extends Component {
   constructor(props) {
     super(props);
-    window.previousLocation = 'main';
+    window.previousLocation = 'start';
   }
   render() {
     return (

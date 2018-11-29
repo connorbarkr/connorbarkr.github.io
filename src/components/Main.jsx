@@ -44,7 +44,7 @@ class Main extends Component {
 
   hashScroll = () => {
     let behavior = 'smooth';
-    if (window.previousLocation === 'project') {
+    if (window.previousLocation !== 'main') {
       behavior = 'auto';
       window.previousLocation = 'main';
     }
@@ -66,9 +66,11 @@ class Main extends Component {
       <div>
         <Header />
         <Landing />
+        <About refProp={this.aboutRef}/>
+        <Projects refProp={this.projectsRef}/>
         {
-        // <About refProp={this.aboutRef}/>
-        // <Projects refProp={this.projectsRef}/>
+        //
+        //
         // <Experience refProp={this.experienceRef}/>
         // <Contact refProp={this.contactRef}/>
         }

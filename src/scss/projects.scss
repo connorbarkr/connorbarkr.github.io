@@ -1,17 +1,50 @@
 @import '_variables';
 
-.project {
-  margin: 1.5rem;
+.projects {
 
-  h3 {
-    color: #000;
+  .project {
+    margin: 1.5rem;
+
+    h3 {
+      color: #000;
+    }
+
+    img {
+      fill: $main-red;
+      height: 12rem;
+      width: 12rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
   }
+}
 
-  img {
-    fill: $main-red;
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+@media only screen and (max-width: 992px) {
+  .projects {
+    width: 100%;
+
+    .project {
+      margin: 0px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      width: 45%;
+
+      &-row {
+        justify-content: space-between;
+      }
+
+      h3 {
+        color: #000;
+        font-size: 1.5em;
+      }
+
+      img {
+        fill: $main-red;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 }

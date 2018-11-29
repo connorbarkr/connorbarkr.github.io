@@ -14,17 +14,17 @@ class Projects extends Component {
     super(props);
 
     this.state = {
-      isMobile: isMobile('lg'),
+      isMobile: isMobile(window, 'lg'),
     };
   }
 
   componendDidUpdate() {
-    this.setState({isMobile: isMobile('lg')});
+    this.setState({isMobile: isMobile(window, 'lg')});
   }
 
   renderProjectRow = (projects) => {
     return (
-      <div className='d-flex flex-row justify-content-center align-items-center'>
+      <div className='d-flex flex-row align-items-center justify-content-center'>
         {projects.map((project) => {
           return (
             <Link to={`/project/${project.title}`} style={{textDecoration: 'none'}} className='d-flex flex-column align-items-center project'>
@@ -39,40 +39,45 @@ class Projects extends Component {
 
   renderProjects = (projects) => {
     const {isMobile} = this.state;
+    let allProjs = [];
+    let maxLen = 3;
+    let i = 0;
 
     if (isMobile) {
-      if (projects.length % 2 === 0) {
-        return;
-      } else {
-        return;
-      }
-    } else {
-      if (projects.length % 2 === 0) {
-        return (
-          <div className='d-flex flex-column'>
-            {this.renderProjectRow(projects.slice(0, projects.length / 2))}
-            {this.renderProjectRow(projects.slice(projects.length / 2, projects.length))}
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            {this.renderProjectRow(projects.slice(0, Math.ceil(projects.length / 2)))}
-            {this.renderProjectRow(projects.slice(Math.ceil(projects.length / 2), projects.length))}
-          </div>
-        );
-      }
+      maxLen = 2;
     }
+    while (i < projects.length) {
+      let newArr = [];
+      for (let j = 0; j < maxLen; j++) {
+        if (projects[i]) {
+          newArr.push(projects[i]);
+          i++;
+        } else {
+          break;
+        }
+      }
+      allProjs.push(newArr);
+      newArr = [];
+    }
+    return (
+      <div className='d-flex flex-column projects'>
+        {allProjs.map((projects) => {
+          return this.renderProjectRow(projects);
+        })}
+      </div>
+    );
   }
 
   render() {
     return (
       <div ref={this.props.refProp} className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
-          <h1>{"some of"}</h1>
-          <h1>{"my projects"}</h1>
+          <h1 className='d-flex flex-column'>
+            <span>{"some of"}</span>
+            <span>{"my projects"}</span>
+          </h1>
         </div>
-        <div className='d-flex justify-content-center align-items-center flex-column content-right about'>
+        <div className='d-flex align-items-center flex-column content-right'>
           {this.renderProjects(PROJECTS)}
         </div>
       </div>

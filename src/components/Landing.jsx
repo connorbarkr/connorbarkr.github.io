@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../scss/landing.scss';
 import '../scss/content.scss';
@@ -40,10 +41,10 @@ class Landing extends Component {
           </h3>
         </div>
         <div className='d-flex justify-content-center landing-cta'>
-          <div className='d-flex flex-column align-items-center'>
+          <Link to='/#about' className='d-flex flex-column align-items-center'>
             <p>{'more about me'}</p>
             <img src={downArrow} alt='down arrow' />
-          </div>
+          </Link>
         </div>
       </div>
     );
