@@ -98,6 +98,15 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .landing-scrolled {
+    .landing-cta {
+      p, img {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  
   .landing {
     flex-direction: column;
     &-left {
