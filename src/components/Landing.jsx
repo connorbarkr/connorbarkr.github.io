@@ -28,12 +28,16 @@ class Landing extends Component {
     return (
       <div className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
         <div className='d-flex justify-content-center flex-column landing-left'>
-          <h1>{"Hello,"}</h1>
-          <h1>{"I'm Connor."}</h1>
+          <h1 className='d-flex flex-column'>
+            <span>{"Hello,"}</span>
+            <span>{"I'm Connor."}</span>
+          </h1>
         </div>
         <div className='d-flex justify-content-center flex-column landing-right'>
-          <h3>{"I write code, build tools,"}</h3>
-          <h3>{"and create unique projects."}</h3>
+          <h3 className='d-flex flex-column'>
+            <span>{"I write code, build tools,"}</span>
+            <span>{"and create unique projects."}</span>
+          </h3>
         </div>
         <div className='d-flex justify-content-center landing-cta'>
           <div className='d-flex flex-column align-items-center'>

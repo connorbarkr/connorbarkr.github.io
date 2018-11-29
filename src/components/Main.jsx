@@ -66,10 +66,12 @@ class Main extends Component {
       <div>
         <Header />
         <Landing />
-        <About refProp={this.aboutRef}/>
-        <Projects refProp={this.projectsRef}/>
-        <Experience refProp={this.experienceRef}/>
-        <Contact refProp={this.contactRef}/>
+        {
+        // <About refProp={this.aboutRef}/>
+        // <Projects refProp={this.projectsRef}/>
+        // <Experience refProp={this.experienceRef}/>
+        // <Contact refProp={this.contactRef}/>
+        }
       </div>
     );
   }
