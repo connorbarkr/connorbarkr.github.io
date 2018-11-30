@@ -38,8 +38,10 @@ class Experience extends Component {
     return (
       <div ref={this.props.refProp} className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
-          <h1>{"where"}</h1>
-          <h1>{"I've worked"}</h1>
+          <h1 className='d-flex flex-column'>
+            <span>{"where"}</span>
+            <span>{"I've worked"}</span>
+          </h1>
         </div>
         <div className='d-flex justify-content-center align-items-center content-right'>
           <ExperienceCarousel onClick={this.changeExperience} experience={exp}/>

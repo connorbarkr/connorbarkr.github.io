@@ -46,7 +46,7 @@ class ProjectDetail extends Component {
         <div className='d-flex flex-column align-items-center project-detail'>
           <div className='d-flex flex-row justify-content-between align-items-bottom project-detail__header'>
             <Link to='/#projects' style={{textDecoration: 'none'}} className='d-flex flex-row justify-content project-detail__header-back'>
-              <img src={arrow} className='icon-xs button-left' alt='left arrow' />
+              <img src={arrow} className='icon-xxs button-left' alt='left arrow' />
               <p>{'back to projects'}</p>
             </Link>
             <h1>{project ? project.title : null}</h1>

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
+import '../scss/contact.scss';
 import '../scss/content.scss';
 import '../scss/_variables.scss';
 
 import ContactForm from './ui/ContactForm';
+
+import instagram from '../assets/instagram_b.svg';
+import github from '../assets/github-logo_b.svg';
+import linkedin from '../assets/linkedin-logo_b.svg';
 
 class Landing extends Component {
   componentDidMount = () => {
@@ -27,13 +32,26 @@ class Landing extends Component {
 
   render() {
     return (
-      <div ref={this.props.refProp} className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
-        <div className='d-flex justify-content-center flex-column landing-left'>
-          <h1>{"Get in touch"}</h1>
-          <h1>{"with me!"}</h1>
+      <div ref={this.props.refProp} className={`d-flex contact ${this.isScrolled ? 'contact-scrolled' : ''}`}>
+        <div className='d-flex justify-content-center flex-column contact-left'>
+          <h1 className='d-flex flex-column'>
+            <span>{"Get in touch"}</span>
+            <span>{"with me!"}</span>
+          </h1>
         </div>
-        <div className='d-flex justify-content-center flex-column landing-right'>
+        <div className='d-flex justify-content-center flex-column contact-right'>
           <ContactForm />
+          <div className='flex-row contact-right__logos justify-content-center'>
+            <a href=''>
+              <img className='icon-xs' src={github} alt='github'/>
+            </a>
+            <a href=''>
+              <img className='icon-xs' src={linkedin} alt='linkedin'/>
+            </a>
+            <a href=''>
+              <img className='icon-xs' src={instagram} alt='instagram'/>
+            </a>
+          </div>
         </div>
       </div>
     );

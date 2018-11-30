@@ -9,9 +9,13 @@ $detail-font: "Montserrat",
   sans-serif;
 
 .icon {
-  &-xs {
+  &-xxs {
     width: 1rem;
     height: 1rem;
+  }
+  &-xs {
+    width: 1.75rem;
+    height: 1.75rem;
   }
   &-sm {
     width: 2.5rem;

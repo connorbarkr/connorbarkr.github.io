@@ -33,7 +33,7 @@
     flex-direction: column;
 
     &-left {
-      height: 32.5%;
+      height: 25%;
       width: 90%;
       border: none;
       border-bottom: 1px solid $main-red;
@@ -51,7 +51,7 @@
       }
     }
     &-right {
-      height: 67.5%;
+      height: 75%;
       width: 90%;
       padding: 0px;
       justify-content: space-evenly;

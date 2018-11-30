@@ -14,12 +14,12 @@ class Projects extends Component {
     super(props);
 
     this.state = {
-      isMobile: isMobile(window, 'lg'),
+      isMobile: isMobile('lg'),
     };
   }
 
   componendDidUpdate() {
-    this.setState({isMobile: isMobile(window, 'lg')});
+    this.setState({isMobile: isMobile('lg')});
   }
 
   renderProjectRow = (projects) => {

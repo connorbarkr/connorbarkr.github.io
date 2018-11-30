@@ -1,21 +1,58 @@
 @import '_variables';
 
 .experience {
+  font-family: $detail-font;
+  text-align: center;
+
+  h1 {
+    color: $main-red;
+    font-weight: 400;
+    font-size: 3em;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 1.25em;
+    margin-bottom: 1.25rem;
+  }
   &-content {
-    font-family: $detail-font;
+    &__desktop {
+      display: block !important;
+    }
+    &__mobile {
+      display: none !important;
+    }
+  }
+  img {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .experience {
     h1 {
-      color: $main-red;
-      font-weight: 400;
-      font-size: 3em;
+      font-size: 2em;
       margin-bottom: 1rem;
     }
     h2 {
       font-weight: 300;
-      font-size: 1.25em;
+      font-size: 0.75em;
       margin-bottom: 1.25rem;
+      width: 100%;
     }
-    p {
-      text-align: center;
+    &-content {
+      &__desktop {
+        display: none !important;
+      }
+      &__mobile {
+        display: block !important;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
+    img {
+      height: 1.5rem;
     }
   }
 }

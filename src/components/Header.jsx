@@ -10,6 +10,8 @@ import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
 import menu from '../assets/menu.svg';
 
+import {isMobile} from '../utils/detectMobile.js';
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -47,8 +49,8 @@ class Header extends Component {
     return (
       <div className={`d-flex justify-content-between header ${this.isScrolled ? 'header-scrolled' : this.isBottom ? 'header-bottom' : ''}`}>
         <div className='header-content__left'>
-          <div className='d-flex align-items-start header-content__left-mobile'>
-            <img className='icon-md' src={menu} alt='menu'/>
+          <div className='d-flex justify-content-start align-items-center header-content__left-mobile'>
+            <img className='icon-sm' src={menu} alt='menu'/>
           </div>
           <div className='d-flex align-items-center header-content__left-desktop'>
             <Link to='/#about'>{"about me"}</Link>
@@ -58,17 +60,18 @@ class Header extends Component {
           </div>
         </div>
         {this.isBottom ?
-          <div className='d-flex flex-row align-items-left header-content__right-alt'>
+          !isMobile('lg') ?
+          <div className='d-flex flex-row justify-content-end align-items-center header-content__right-alt'>
             <a href=''>
-              <img className='icon-sm' src={github} alt='instagram'/>
+              <img className='icon-sm' src={github} alt='github'/>
             </a>
             <a href=''>
-              <img className='icon-sm' src={linkedin} alt='instagram'/>
+              <img className='icon-sm' src={linkedin} alt='linkedin'/>
             </a>
             <a href=''>
               <img className='icon-sm' src={instagram} alt='instagram'/>
             </a>
-          </div> :
+          </div> : null :
           <div className='d-flex align-items-center header-content__right'>
             <Link to='/#contact'>{"contact"}</Link>
           </div>}

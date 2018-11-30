@@ -1,4 +1,4 @@
-export const isMobile = (window, breakpoint) => {
+export const isMobile = (breakpoint) => {
   let currentWidth = window.innerWidth;
 
   switch (breakpoint) {

@@ -1,0 +1,178 @@
+@import '_variables';
+
+.contact-scrolled {
+  .contact-right {
+    background-position: left bottom;
+  }
+  .contact-field {
+    input, textarea {
+      border-bottom: 2px solid #000;
+      color: #000;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #000;
+    }
+  }
+  .contact-button {
+    color: #000;
+    border: 3px solid #000;
+  }
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+
+  &-left {
+    width: 61.8%;
+    height: 100%;
+
+    h1 {
+      margin: 0rem;
+      margin-right: 1rem;
+      text-align: right;
+      font-size: 7em;
+      font-weight: bold;
+      color: #C91717;
+      transition: $transition-med;
+    }
+  }
+  &-right {
+    width: 38.2%;
+    background: linear-gradient(to left, $main-red 50%, $background 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    height: 100%;
+    display: block;
+    transition: 0.25s ease;
+
+    h3 {
+      transform: translateY(5rem);
+      margin: 0rem;
+      margin-left: 1rem;
+      text-align: left;
+      font-size: 2em;
+      color: #FFF;
+      transition: $transition-med;
+    }
+
+    &__logos {
+      display: none !important;
+    }
+  }
+  &-field {
+    width: 80%;
+    input, textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid #FFF;
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      font-size: 3em;
+      color: #FFF;
+      outline: none;
+      transition: $transition-med;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #FFF;
+      transition: $transition-med;
+    }
+  }
+  &-button {
+      color: #FFF;
+      background: transparent;
+      padding: 0rem 1rem 0.2rem 1rem;
+      font-size: 2em;
+      border: 3px solid #FFF;
+      border-radius: 0.75rem;
+      text-decoration: none;
+    }
+
+  &-button:hover {
+    color: $main-red;
+    background-color: white;
+    transition: $transition-med;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+    &-left {
+      position: relative;
+      width: 100%;
+      height: 30%;
+
+      h1 {
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        margin: 0px;
+        margin-left: 1rem;
+        font-size: 3.25em;
+      }
+    }
+    &-right {
+      width: 100%;
+      height: 80%;
+      background: none;
+      position: relative;
+
+      h3 {
+        font-size: 1.25em;
+        color: #000;
+        position: absolute;
+        top: 0;
+        transform: none;
+        margin: 0rem;
+        margin-left: 1rem;
+      }
+
+      &__logos {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2rem;
+        display: flex !important;
+
+        a {
+          margin: 0rem 0.5rem 0rem 0.5rem;
+        }
+      }
+    }
+    &-field, &-button {
+      transform: translateY(-3rem);
+    }
+
+    &-field {
+      width: 90%;
+      input, textarea {
+        font-size: 2em;
+        border-bottom: 2px solid #000;
+        color: #000;
+      }
+
+      input::placeholder, textarea::placeholder {
+        color: #000;
+      }
+    }
+    &-button {
+        color: #000;
+        background: transparent;
+        padding: 0rem 1rem 0.2rem 1rem;
+        font-size: 2em;
+        border: 3px solid #000;
+        border-radius: 0.75rem;
+        text-decoration: none;
+      }
+
+    &-button:hover {
+      color: #FFF;
+      background-color: #000;
+      transition: $transition-med;
+    }
+  }
+}

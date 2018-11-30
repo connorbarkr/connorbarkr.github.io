@@ -12,7 +12,6 @@
 
 .header-scrolled {
   background-color: $main-red;
-  border-bottom: 1px solid $main-red !important;
 
   .header-content__left {
     a {
@@ -35,10 +34,11 @@
   transition: $transition-med;
 
   &-content {
-    width: 100vw;
+    width: 70%;
 
     &__left {
       transition: $transition-med;
+      width: 50%;
 
       &-mobile {
         display: none;
@@ -112,7 +112,6 @@
 
 @media only screen and (max-width: 992px) {
   .header {
-    height: 96px;
     width: 100vw;
     background-color: $main-red;
     border-bottom: none;
@@ -130,6 +129,18 @@
           height: 0px;
           width: 0px;
         }
+      }
+      &__right {
+        a {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  .header-bottom {
+    .header-content__right {
+      a {
+        display: none !important;
       }
     }
   }
