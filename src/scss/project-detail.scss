@@ -1,5 +1,13 @@
 @import '_variables';
 
+.mobile {
+  width: 100%;
+  display: none !important;
+}
+.desktop {
+  width: 100%;
+  display: block !important;
+}
 .project-detail {
   height: 100vh;
   width: 100%;
@@ -67,6 +75,7 @@
 }
 
 @media only screen and (max-width: 992px) {
+  
   .project-detail {
     &__header {
       width: 90%;

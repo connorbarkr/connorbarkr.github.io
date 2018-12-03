@@ -7,7 +7,7 @@ import {PROJECT_DETAIL} from '../../utils/constants';
 
 import arrow from '../../assets/down-arrow.svg';
 
-class ExperienceCarousel extends Component {
+class ProjectDetailCarousel extends Component {
   state = {
     index: 0,
     currentDetail: PROJECT_DETAIL[0],
@@ -34,7 +34,6 @@ class ExperienceCarousel extends Component {
   render() {
     const {project} = this.props;
     const {currentDetail} = this.state;
-    let detailText = project ? project[currentDetail.value] : null;
 
     return (
       <div className='d-flex flex-row justify-content-between project-detail__body'>
@@ -52,4 +51,4 @@ class ExperienceCarousel extends Component {
   }
 }
 
-export default ExperienceCarousel;
+export default ProjectDetailCarousel;
