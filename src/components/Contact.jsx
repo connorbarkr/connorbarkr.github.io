@@ -42,13 +42,13 @@ class Landing extends Component {
         <div className='d-flex justify-content-center flex-column contact-right'>
           <ContactForm />
           <div className='flex-row contact-right__logos justify-content-center'>
-            <a href=''>
+            <a href='https://github.com/connorbarkr'>
               <img className='icon-xs' src={github} alt='github'/>
             </a>
-            <a href=''>
+            <a href='https://www.linkedin.com/in/connor-barker-a49431146/'>
               <img className='icon-xs' src={linkedin} alt='linkedin'/>
             </a>
-            <a href=''>
+            <a href='https://www.instagram.com/eskimopies/?hl=en'>
               <img className='icon-xs' src={instagram} alt='instagram'/>
             </a>
           </div>

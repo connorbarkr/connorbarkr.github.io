@@ -62,13 +62,13 @@ class Header extends Component {
         {this.isBottom ?
           !isMobile('lg') ?
           <div className='d-flex flex-row justify-content-end align-items-center header-content__right-alt'>
-            <a href=''>
+            <a href='https://github.com/connorbarkr'>
               <img className='icon-sm' src={github} alt='github'/>
             </a>
-            <a href=''>
+            <a href='https://www.linkedin.com/in/connor-barker-a49431146/'>
               <img className='icon-sm' src={linkedin} alt='linkedin'/>
             </a>
-            <a href=''>
+            <a href='https://www.instagram.com/eskimopies/?hl=en'>
               <img className='icon-sm' src={instagram} alt='instagram'/>
             </a>
           </div> : null :

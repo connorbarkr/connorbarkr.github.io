@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import ProjectDetailCarousel from './ui/ProjectDetailCarousel';
+
 import '../scss/project-detail.scss';
 import '../scss/content.scss';
 import '../scss/_variables.scss';
@@ -44,30 +46,14 @@ class ProjectDetail extends Component {
       <div>
         <Header />
         <div className='d-flex flex-column align-items-center project-detail'>
-          <div className='d-flex flex-row justify-content-between align-items-bottom project-detail__header'>
-            <Link to='/#projects' style={{textDecoration: 'none'}} className='d-flex flex-row justify-content project-detail__header-back'>
+          <div className='project-detail__header'>
+            <Link to='/#projects' style={{textDecoration: 'none'}} className='d-flex flex-row project-detail__header-back'>
               <img src={arrow} className='icon-xxs button-left' alt='left arrow' />
               <p>{'back to projects'}</p>
             </Link>
             <h1>{project ? project.title : null}</h1>
           </div>
-          <div className='d-flex flex-row justify-content-between project-detail__body'>
-            <div className='d-flex flex-column align-items-center project-detail__body-info'>
-              <img className='icon-lg' src={how} alt='how'/>
-              <h3>{'what it does'}</h3>
-              <p>{project ? project.what : null}</p>
-            </div>
-            <div className='d-flex flex-column align-items-center project-detail__body-info'>
-              <img className='icon-lg' src={code} alt='code'/>
-              <h3>{'how it does it'}</h3>
-              <p>{project ? project.how : null}</p>
-            </div>
-            <div className='d-flex flex-column align-items-center project-detail__body-info'>
-              <img className='icon-lg' src={siren} alt='siren'/>
-              <h3>{'challenges'}</h3>
-              <p>{project ? project.challenges : null}</p>
-            </div>
-          </div>
+          <ProjectDetailCarousel project={project} />
         </div>
       </div>
     );
