@@ -1,13 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import './scss/index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-const history = createBrowserHistory();
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/index.scss';
+
+import App from './App';
+
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <BrowserRouter>

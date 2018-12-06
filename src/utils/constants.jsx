@@ -1,3 +1,5 @@
+export const TABS = [{value: 'about'}, {value: 'experience'}, {value: 'projects'}, {value: 'resume'}, {value: 'contact'}];
+
 export const INTRO = 'Hey there! I’m Connor, a Computer Engineering student at the University of Waterloo. I’ve been writing code since I was 11 years old, when I built a text-based adventure game in JavaScript. Since then, I’ve worked on a lot of cool projects in a lot of languages, which you can check out below!';
 
 export const LOREM = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'

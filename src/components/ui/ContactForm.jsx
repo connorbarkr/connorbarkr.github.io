@@ -1,27 +1,64 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
+
+import {endpoint} from '../../utils/keys.js';
 
 import '../../scss/contact.scss';
 
-//TODO build your own email submission thing in React
+class ContactForm extends Component {
 
-const ContactForm = () => {
-  return (
-    <div>
-      <form className='d-flex flex-column justify-content-center align-items-center' id='gform' method='POST' data-email='example@email.net' action='https://script.google.com/macros/s/AKfycbwEMBsVsikS2loIk1okuUKkyokfBSGrxzhWeW-NG7lD-q7KnzY/exec'>
+  state = {
+    name: null,
+    msg: null,
+    email: null,
+  };
+
+  submit = (e) => {
+    const {name, msg, email} = this.state;
+
+    e.preventDefault();
+    axios({
+      method: 'POST',
+      url : endpoint,
+      data: {
+        name: name,
+        email: email,
+        msg: msg,
+      },
+      crossDomain: 'true',
+    }).then((response) => {
+      console.log(response);
+    });
+  }
+
+  updateName = (e) => {
+    this.setState({name: e.target.value});
+  }
+
+  updateMsg = (e) => {
+    this.setState({msg: e.target.value});
+  }
+
+  updateEmail = (e) => {
+    this.setState({email: e.target.value});
+  }
+
+  render() {
+    return (
+      <form id='contact-form' className='d-flex flex-column justify-content-center align-items-center' method='POST'>
         <fieldset class='contact-field contact-name'>
-          <input id='name' name='name' placeholder='name' />
+          <input id='name' placeholder='name' onBlur={this.updateName} />
         </fieldset>
         <fieldset class='contact-field contact-message'>
-          <textarea rows={1} id='message' name='message' placeholder='message' />
+          <textarea rows={1} id='message' placeholder='message' onBlur={this.updateMsg} />
         </fieldset>
         <fieldset class='contact-field contact-email'>
-          <input id='email' name='email' type='email' required placeholder='email' />
+          <input id='email' type='email' placeholder='email' onBlur={this.updateEmail} />
         </fieldset>
-        <button class='contact-button'>{'send'}</button>
+        <button type='button' class='contact-button' onClick={this.submit}>{'send'}</button>
       </form>
-      <script data-cfasync='false' type='text/javascript' src='https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js' />
-    </div>
-  );
-};
+    );
+  };
+}
 
 export default ContactForm;
