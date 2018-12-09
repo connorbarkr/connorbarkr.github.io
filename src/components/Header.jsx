@@ -96,7 +96,7 @@ class Header extends Component {
               <img className='icon-sm' src={this.state.sidebarOpen ? close : menu} alt='menu' onClick={this.toggleSidebar} />
             </div>
             <div className='d-flex align-items-center header-content__left-desktop'>
-              <Link to='/#about'>{"about me"}</Link>
+              <Link to='/#about'>{"about"}</Link>
               <Link to='/#projects'>{"projects"}</Link>
               <Link to='/#experience'>{"experience"}</Link>
               <Link to='/'>{"resume"}</Link>

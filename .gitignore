@@ -1,8 +1,9 @@
 *.sass-cache
 *.style.css.map
 *.editorconfig
-theme1
+theme1/
 old_site/
 wireframes/
 node_modules/
+build/
 keys.js

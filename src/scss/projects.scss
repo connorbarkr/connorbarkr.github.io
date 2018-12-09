@@ -19,7 +19,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .projects {
     width: 100%;
 
@@ -35,15 +35,87 @@
 
       h3 {
         color: #000;
-        font-size: 1.5em;
       }
 
       img {
         fill: $main-red;
-        height: 6rem;
-        width: 6rem;
         border-radius: 50%;
         margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .projects {
+    .project {
+      h3 {
+        font-size: 3em;
+      }
+
+      img {
+        height: 12rem;
+        width: 12rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .projects {
+    .project {
+      h3 {
+        font-size: 2.25em;
+      }
+
+      img {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .projects {
+    .project {
+      h3 {
+        font-size: 1.75em;
+      }
+
+      img {
+        height: 8rem;
+        width: 8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 500px) {
+  .projects {
+    .project {
+      h3 {
+        font-size: 1.5em;
+      }
+
+      img {
+        height: 7rem;
+        width: 7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .projects {
+    .project {
+      h3 {
+        font-size: 1.25em;
+      }
+
+      img {
+        height: 6rem;
+        width: 6rem;
       }
     }
   }

@@ -39,7 +39,6 @@
 
     &__left {
       transition: $transition-med;
-      width: 50%;
 
       &-mobile {
         display: none;
@@ -111,7 +110,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .header {
     width: 100vw;
     background-color: $main-red;

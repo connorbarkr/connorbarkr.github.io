@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import {endpoint} from '../../utils/keys.js';
-
 import '../../scss/contact.scss';
 
 class ContactForm extends Component {
@@ -19,7 +17,7 @@ class ContactForm extends Component {
     e.preventDefault();
     axios({
       method: 'POST',
-      url : endpoint,
+      url : 'https://google.com',
       data: {
         name: name,
         email: email,
@@ -55,7 +53,7 @@ class ContactForm extends Component {
         <fieldset class='contact-field contact-email'>
           <input id='email' type='email' placeholder='email' onBlur={this.updateEmail} />
         </fieldset>
-        <button type='button' class='contact-button' onClick={this.submit}>{'send'}</button>
+        <button type='button' className='contact-button' onClick={this.submit}>{'send'}</button>
       </form>
     );
   };

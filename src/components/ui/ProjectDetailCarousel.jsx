@@ -37,7 +37,7 @@ class ProjectDetailCarousel extends Component {
 
     return (
       <div className='d-flex flex-row justify-content-between project-detail__body'>
-        <div className='d-flex flex-column align-items-center project-detail__body-info'>
+        <div className='d-flex flex-column justify-content-center align-items-center project-detail__body-info'>
           <img className='icon-md' src={`/projectImages/${currentDetail.value}.svg`} alt={currentDetail.value}/>
           <h3>{currentDetail.title}</h3>
           <div className='d-flex flex-row justify-content-center align-items-center'>
