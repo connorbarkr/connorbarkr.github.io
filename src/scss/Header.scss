@@ -12,7 +12,7 @@
 
 .header-scrolled {
   background-color: $main-red;
-  border-bottom: none !important;
+  border-bottom: 1px solid $main-red;
 
   .header-content__left {
     a {
@@ -32,6 +32,7 @@
   height: 75px;
   border-bottom: 1px solid $line-grey;
   z-index: 99;
+  font-weight: bold;
   transition: $transition-med;
 
   &-content {
@@ -39,6 +40,7 @@
 
     &__left {
       transition: $transition-med;
+      width: 80px !important;
 
       &-mobile {
         display: none;
@@ -87,7 +89,7 @@
         opacity: 1;
         visibility: visible;
         color: #FFF;
-        padding: 0rem 1rem 0.2rem 1rem;
+        padding: 0rem 1rem 0rem 1rem;
         font-size: 2em;
         border: 3px solid #FFF;
         border-radius: 0.75rem;

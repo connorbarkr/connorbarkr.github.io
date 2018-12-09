@@ -41,9 +41,9 @@ class ProjectDetailCarousel extends Component {
           <img className='icon-md' src={`/projectImages/${currentDetail.value}.svg`} alt={currentDetail.value}/>
           <h3>{currentDetail.title}</h3>
           <div className='d-flex flex-row justify-content-center align-items-center'>
-            <img src={arrow} className='button-left clickable' alt='left arrow' onClick={() => {this.changeDetail('prev')}} />
+            <img src={arrow} className='button-left clickable arrow' alt='left arrow' onClick={() => {this.changeDetail('prev')}} />
             <p>{project ? project.challenges : null}</p>
-            <img src={arrow} className='button-right clickable' alt='right arrow' onClick={() => {this.changeDetail('next')}} />
+            <img src={arrow} className='button-right clickable arrow' alt='right arrow' onClick={() => {this.changeDetail('next')}} />
           </div>
         </div>
       </div>

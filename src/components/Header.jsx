@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import Sidebar from 'react-sidebar';
 
 import {isMobile} from '../utils/detectMobile.js';
@@ -34,7 +34,7 @@ class Header extends Component {
   }
 
   conponentDidUpdate() {
-    enableBodyScroll();
+    clearAllBodyScrollLocks();
   }
 
   checkScroll = (event) => {

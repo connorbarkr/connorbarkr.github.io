@@ -5,7 +5,7 @@ export const isMobile = (breakpoint) => {
     case 'sm':
       return currentWidth <= 420;
     case 'md':
-      return currentWidth <= 720;
+      return currentWidth <= 900;
     case 'lg':
       return currentWidth <= 1200;
     default:

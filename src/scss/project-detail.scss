@@ -127,24 +127,24 @@
   .project-detail {
     &__header {
       h1 {
-        font-size: 6em;
+        font-size: 5em;
       }
       &-back {
         p {
-          font-size: 2em;
+          font-size: 1.5em;
         }
       }
     }
     &__body {
       div {
         p {
-          font-size: 2em;
+          font-size: 1.75em;
         }
         h3 {
-          font-size: 3em;
+          font-size: 2.5em;
           margin: 3rem;
         }
-        img {
+        .arrow {
           width: 36px !important;
         }
       }
@@ -173,7 +173,7 @@
           font-size: 2.5em;
           margin: 3rem;
         }
-        img {
+        .arrow {
           width: 36px !important;
         }
       }
@@ -196,13 +196,13 @@
     &__body {
       div {
         p {
-          font-size: 1.5em;
+          font-size: 1.25em;
         }
         h3 {
-          font-size: 2.5em;
+          font-size: 2em;
           margin: 3rem;
         }
-        img {
+        .arrow {
           width: 36px !important;
         }
       }
@@ -231,7 +231,7 @@
           font-size: 1.5em;
           margin: 2rem;
         }
-        img {
+        .arrow {
           width: 24px !important;
         }
       }
@@ -260,7 +260,7 @@
           font-size: 1.5em;
           margin: 1rem;
         }
-        img {
+        .arrow {
           width: 24px !important;
         }
       }
