@@ -53,15 +53,14 @@ class Main extends Component {
     window.location.hash = window.decodeURIComponent(window.location.hash);
     const hashParts = window.location.hash.split('#');
 
+    if (hashParts.length === 0) {return;}
     let bottom = false;
     if (hashParts.length > 1) {
       let hash = hashParts[1];
       if (hashParts.length > 2) {
         hash = hashParts.slice(-1)[0];
       }
-      console.log(hash);
       if (!_.find(TABS, {value: hash})) {
-        console.log("OH NO");
         return;
       }
       if (hash === 'contact') {bottom = true;}
