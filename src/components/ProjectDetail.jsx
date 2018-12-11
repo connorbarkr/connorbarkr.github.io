@@ -14,6 +14,7 @@ import siren from '../assets/siren.svg';
 import code from '../assets/code.svg';
 import how from '../assets/how.svg';
 import arrow from '../assets/down-arrow.svg';
+import github_r from '../assets/github-logo_r.svg';
 
 import Header from './Header';
 
@@ -52,7 +53,10 @@ class ProjectDetail extends Component {
               <img src={arrow} className='icon-xxs button-left' alt='left arrow' />
               <p>{'back to projects'}</p>
             </Link>
-            <h1>{project ? project.title : null}</h1>
+            <h1>{isMobile('lg') ? null :
+              <a href={project ? project.link : null}>
+                <img className='icon-xs' src={github_r} alt='github'/>
+              </a>}{project ? project.title : null}</h1>
           </div>
           {isMobile('lg') ?
             <ProjectDetailCarousel project={project} /> :

@@ -14,6 +14,7 @@ import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
+import resume from '../assets/resume_interactive_web.pdf';
 
 import SidebarContent from './ui/SidebarContent';
 
@@ -99,7 +100,7 @@ class Header extends Component {
               <Link to='/#about'>{"about"}</Link>
               <Link to='/#projects'>{"projects"}</Link>
               <Link to='/#experience'>{"experience"}</Link>
-              <Link to='/'>{"resume"}</Link>
+              <a href={resume}>{"resume"}</a>
             </div>
           </div>
           {this.isBottom ?
