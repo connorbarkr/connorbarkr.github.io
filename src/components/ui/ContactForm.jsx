@@ -30,6 +30,12 @@ class ContactForm extends Component {
     } else if (!emailValidator.test(email)) {
       alert("Please enter a valid email address.");
       return;
+    } else if (name.length > 100) {
+      alert("Please enter a name under 100 characters long.");
+      return;
+    } else if (msg.length > 500) {
+      alert("Please enter a message under 500 characters long");
+      return;
     }
     this.setState({sending: true}, () => {
       axios({
@@ -82,7 +88,7 @@ class ContactForm extends Component {
               <h2>{'Thanks for getting in touch!'}</h2>
               <button onClick={this.sendAgain}>{'contact again'}</button>
             </div> :
-            <div id='contact-form' className='d-flex flex-column justify-content-center align-items-center' method='POST'>
+            <div style={{width: '100%'}} className='d-flex flex-column justify-content-center align-items-center'>
               <div class='contact-field contact-name'>
                 <input id='name' placeholder='name' onBlur={this.updateName} />
               </div>
