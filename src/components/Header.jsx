@@ -14,7 +14,7 @@ import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
-import resume from '../assets/resume_interactive_web.pdf';
+import resume from '../assets/resume_interactive.pdf';
 
 import SidebarContent from './ui/SidebarContent';
 
@@ -30,7 +30,6 @@ class Header extends Component {
       window.addEventListener('scroll', this.checkScroll);
     } else {
       this.isScrolled = true;
-      this.forceUpdate();
     }
   }
 
@@ -46,14 +45,16 @@ class Header extends Component {
     if (scrollTop > 0 && !(scrollTop >= limit - window.innerHeight)) {
       this.isBottom = false;
       this.isScrolled = true;
+      this.forceUpdate();
     } else if (scrollTop >= limit - window.innerHeight) {
       this.isBottom = true;
       this.isScrolled = false;
+      this.forceUpdate();
     } else {
       this.isBottom = false;
       this.isScrolled = false;
+      this.forceUpdate();
     }
-    this.forceUpdate();
   }
 
   toggleSidebar = () => {

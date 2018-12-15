@@ -12,7 +12,7 @@
 
 .header-scrolled {
   background-color: $main-red;
-  border-bottom: 1px solid $main-red;
+  border-bottom: 1px solid $main-red !important;
 
   .header-content__left {
     a {

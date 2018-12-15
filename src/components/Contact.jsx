@@ -11,6 +11,14 @@ import github from '../assets/github-logo_b.svg';
 import linkedin from '../assets/linkedin-logo_b.svg';
 
 class Landing extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      height: window.innerHeight,
+    };
+  }
+
   componentDidMount = () => {
     window.addEventListener('scroll', this.checkScroll);
   }
@@ -20,19 +28,20 @@ class Landing extends Component {
                    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
     let scrollTop = window.scrollY;
 
-    if (scrollTop < limit - window.innerHeight) {
+    if (scrollTop < limit - this.state.height) {
       this.isScrolled = true;
+      this.forceUpdate();
     } else {
       this.isScrolled = false;
+      this.forceUpdate();
     }
-    this.forceUpdate();
   }
 
   isScrolled = false;
 
   render() {
     return (
-      <div ref={this.props.refProp} className={`d-flex contact ${this.isScrolled ? 'contact-scrolled' : ''}`}>
+      <div ref={this.props.refProp} style={{height: this.state.height}} className={`d-flex contact ${this.isScrolled ? 'contact-scrolled' : ''}`}>
         <div className='d-flex justify-content-center flex-column contact-left'>
           <h1 className='d-flex flex-column'>
             <span>{"Get in touch"}</span>

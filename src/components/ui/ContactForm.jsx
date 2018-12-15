@@ -72,7 +72,7 @@ class ContactForm extends Component {
   render() {
     const {sending, sent} = this.state;
     return (
-      <div>
+      <div className='contact-form d-flex align-items-center'>
         {sending ?
           <div className='d-flex flex-column justify-content-center align-items-center contact-again'>
             <h2>{'Sending...'}</h2>

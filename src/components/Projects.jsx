@@ -14,6 +14,7 @@ class Projects extends Component {
     super(props);
 
     this.state = {
+      height: window.innerHeight,
       isMobile: isMobile('md'),
     };
   }
@@ -70,7 +71,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div ref={this.props.refProp} className='d-flex content align-items-center'>
+      <div ref={this.props.refProp} style={{height: this.state.height}} className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
           <h1 className='d-flex flex-column'>
             <span>{"some of"}</span>

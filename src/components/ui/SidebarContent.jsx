@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import '../../scss/sidebar.scss';
 
-import resume from '../../assets/resume_interactive_web.pdf';
+import resume from '../../assets/resume_interactive.pdf';
 
 const SidebarContent = ({clickProp}) => {
   return (

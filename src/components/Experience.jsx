@@ -9,9 +9,14 @@ import '../scss/_variables.scss';
 import {EXPERIENCES} from '../utils/constants';
 
 class Experience extends Component {
-  state = {
-    index: 0,
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      height: window.innerHeight,
+      index: 0,
+    };
+  }
 
   changeExperience = (direction) => {
     const {index} = this.state;
@@ -36,7 +41,7 @@ class Experience extends Component {
     let exp = currentExperience ? currentExperience : EXPERIENCES[0];
 
     return (
-      <div ref={this.props.refProp} className='d-flex content align-items-center'>
+      <div ref={this.props.refProp} style={{height: this.state.height}} className='d-flex content align-items-center'>
         <div className='d-flex justify-content-center flex-column content-left'>
           <h1 className='d-flex flex-column'>
             <span>{"where"}</span>

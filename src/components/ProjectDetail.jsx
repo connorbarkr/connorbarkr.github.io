@@ -24,6 +24,7 @@ class ProjectDetail extends Component {
     super(props);
 
     this.state = {
+      height: window.innerHeight,
       project: null,
     };
   }
@@ -47,7 +48,7 @@ class ProjectDetail extends Component {
     return (
       <div>
         <Header />
-        <div className='d-flex flex-column align-items-center project-detail'>
+        <div style={{height: this.state.height}} className='d-flex flex-column align-items-center project-detail'>
           <div className='project-detail__header'>
             <Link to='/#projects' style={{textDecoration: 'none'}} className='d-flex flex-row project-detail__header-back'>
               <img src={arrow} className='icon-xxs button-left' alt='left arrow' />

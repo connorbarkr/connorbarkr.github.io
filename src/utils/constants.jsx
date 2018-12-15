@@ -23,7 +23,7 @@ export const PROJECTS = [
     img: 'tictactoe',
     title: 'tictactoe',
     link: 'https://github.com/connorbarkr/tictactoe',
-    what: 'The tictactoe program is pretty self-explanatory; it\'s a game of tictactoe I build in Python as part of a jpb application! Building it was quite fun, as I was constrained by a one-hour time limit, so my solutions to problems I encountered had to be effective and relatively simple to implement while remaining very fast.',
+    what: 'The tictactoe program is pretty self-explanatory; it\'s a game of tictactoe I built in Python as part of a job application! Building it was quite fun, as I was constrained by a one-hour time limit, so my solutions to problems I encountered had to be effective and relatively simple to implement while remaining very fast.',
     how: 'The game is written in Python, and lacks a GUI (so it needs to be played on the command line). The board is stored as an array of strings, and asks the user to input a number between 1 and 9, which it uses to retrieve the index of the spot the user selects. The opponent\'s moves are totally randomized.',
     challenges: 'The biggest challenge for this project was definitely the time limit - while the code itself is relatively simple, the 1 hour time limit forced me to plan exactly what I wanted to do before I started in order to expedite the decision-making process for how I wanted to implement features like storing the board, choosing a team, and playing against an opponent.',
   },
@@ -33,8 +33,8 @@ export const PROJECTS = [
     title: 'laz0rb0i',
     link: 'https://github.com/CrypticEskimo/laz0rb0i',
     what: 'laz0rb0i is, in part, a hardware project. It consists of two mirrors mounted on motors, a PCB which controls both of them, and a laser pointer. The laser pointer projects a beam which is reflected off of both spinning mirrors to create patterns on a wall, which change in diameter and complexity depending on the direction and speed of rotation of the motors.',
-    how: 'All code for this project was written in C++, using libraries to control the GPIO pins of the PCB being used. An Omega2 was used to send PWM signals to control the motors, with a battery pack and a motor controller chip as an intermediary. The software can produce its own random input using sine waves, or it can accept user input to manually adjust the speed and direction of the motors. The remaining hardware was taken from the machine shop in which this was constructed.',
-    challenges: 'The biggest challenge for this project was getting the Omega2 to run the code I\'d written. It runs the MIPS architecture, and lacks the RAM to compile C++ code itself, which made cross-compilation difficult. This was ultimately accomplished usign a virtual Linux environment and custom software. Another challenge was working with the GPIO pins. The library I was attempting to use didn\'t function correctly and lacked documentation, so I constructed my own using bash commands.',
+    how: 'All code for this project was written in C++, using libraries to control the GPIO pins of the PCB (an Omega2) being used. The Omega2 was used to send PWM signals to control the motors, with a battery pack and a motor controller chip as an intermediary. The software can produce its own random input using sine waves, or it can accept user input to manually adjust the speed and direction of the motors. The remaining hardware was taken from the machine shop in which this was constructed.',
+    challenges: 'The biggest challenge for this project was getting the Omega2 to run the code I\'d written. It runs the MIPS architecture, and lacks the RAM to compile C++ code itself, which made cross-compilation necessary. This was ultimately accomplished usign a virtual Linux environment and custom software. Another challenge was working with the GPIO pins. The library I was attempting to use didn\'t function correctly and lacked documentation, so I constructed my own using bash commands.',
   },
   {
     value: 2,
@@ -42,7 +42,7 @@ export const PROJECTS = [
     title: 't.n.s.i.',
     link: 'https://github.com/connorbarkr/totallynotspaceinvaders',
     what: 'An old-school arcade game which is Totally Not Space Invaders! (Although it may draw inspiration from it.) It features custom artwork, randomly generated starscape backgrounds, increasing difficulty, and persistent high scores. It also has experimental new features like the ability to drop mines to protect your base!',
-    how: 'Built using PyGame and written using Python3, t.n.s.i. uses principles like functional and modular programming and object-oriented program to function. The project is split into several different files which group classes and functions for increased readability and ease of modification/refactoring at a later date. I tried to break each function down if it featured a reusable component.',
+    how: 'Built using PyGame and written using Python3, t.n.s.i. uses principles like functional and object-oriented programming to function. The project is split into several different files which group classes and functions for increased readability and ease of modification/refactoring at a later date. I tried to break each function down if it featured a reusable component.',
     challenges: 'There were several challenges I encountered during this project, such as how to store high scores persistently and how to balance gameplay. I solved the first challenge by reading from/writing to a text file at the end of a game, provided the high score is greater than the previous one. Game balancing was more difficult, but I resolved this by limiting the number of shots a player can fire at once and increasing the aliens\' speed each level.',
   },
   {
@@ -50,9 +50,9 @@ export const PROJECTS = [
     img: 'flickr',
     title: 'PhotoGallery',
     link: 'https://github.com/connorbarkr/PhotoGallery',
-    what: 'PhotoGallery is a wrapper for the photo-sharing platform Flickr. It\'s an Android app that I designed and built myself, and uses the Flickr API as well as functions like dynamic image loading and image searching based on title and keyword.',
+    what: 'PhotoGallery is a wrapper for the photo-sharing platform Flickr. It\'s an Android app that I designed and built myself, and uses the Flickr API as well as functionality like dynamic image loading and image searching based on title and keyword.',
     how: 'PhotoGallery is build in Java and XML in Android Studio. The app itself uses several practices to increase the speed of actions like scrolling and searching through images. In order to retrieve images on load or on search, the app calls the RESTful Flickr API endpoints that correspond to these actions. It also uses a RecyclerView to increase render speed when the user scrolls through a list of photos.',
-    challenges: 'This was the first app I built for Android, and as such was both very educational and very challenging. Such challenges included learning the best practices for Android, such as modular code and more specific things like the use of a RecyclerView, and correctly styling the app using XML. Learning to work with HTTP requests was also difficult, although I overcame all of these challenges through reading and (most importantly) good old-fashioned trial and error.',
+    challenges: 'This was the first app I built for Android, and as such was both very educational and very challenging. Challenges included learning the best general practices for Android, such as modular code, as well as more specific things like the use of a RecyclerView or correctly styling the app using XML. Learning to work with HTTP requests was also difficult, although I overcame all of these challenges through reading and (most importantly) good old-fashioned trial and error.',
   },
   {
     value: 4,
@@ -60,7 +60,7 @@ export const PROJECTS = [
     title: 'asciify',
     link: 'https://github.com/connorbarkr/ASCIIfy',
     what: 'ASCIIfy is an extension for the web browser Google Chrome. When activated, it replaces all images on a webpage (within a certain limit) with ASCII art versions of themselves, that have been slightly colorized and scaled to fit so that the layout of the page isn\'t compromised and all text remains legible. The art can also be copy-pasted to preserve it for future use.',
-    how: 'ASCIIfy is build entirely in JavaScript, using the Chrome extension framework. It parses images in bunches of pixels, finding their average greyscale and color values. It uses the greyscale values to find an ASCII character equivalent, which it colors using the average color value of that square of pixels. It then uses jQuery to replace the image on the webpage with a text box, populated with the stitched-together ASCII characters retrieved earlier.',
+    how: 'ASCIIfy is build entirely in JavaScript, using the Chrome extension framework. It parses images in blocks of pixels, finding their average greyscale and color values. It uses the greyscale values to find an ASCII character equivalent, which it colors using the average color value of that square of pixels. It then uses jQuery to replace the image on the webpage with a text box, populated with the stitched-together ASCII characters retrieved earlier.',
     challenges: 'The main challenge in this process was circumventing the cross-origin policies Chrome puts in place (CORS). This was problematic because CORS prevents reading image data that didn\'t originate on the domain the user is on. I got around this by copying the image data to a new image, and manually resetting the image\'s origin to \'anonymous\', then reading the pixel data from the new image instead of the original.',
   },
   {
@@ -86,7 +86,7 @@ export const EXPERIENCES = [
   {
     name: 'Portal',
     title: 'fullstack developer',
-    dates: 'January - April 2017',
+    dates: 'January - April 2018',
     p1: 'During my time on the Portal developer team, I worked with a variety of environments, languages, and platforms. My responsibilities included building an analytics tracker from scratch.',
     p2: 'I also redesigned the CECA (UWaterloo’s center for Co-operative Education & Career Action) paging system, using JavaScript and HTML/CSS. This process included the creation of new functionality for the system, such as the ability to edit interview timeslots, message students, and more.',
     p3: 'I also attended weekly Agile SCRUM meetings, used Jira to track task completion, and participated in storyboarding meetings once every three-week sprint.',

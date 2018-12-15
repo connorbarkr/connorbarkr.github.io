@@ -8,6 +8,14 @@ import '../scss/_variables.scss';
 import downArrow from '../assets/down-arrow.svg';
 
 class Landing extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      height: window.innerHeight,
+    };
+  }
+
   componentDidMount = () => {
     window.addEventListener('scroll', this.checkScroll);
   }
@@ -17,17 +25,18 @@ class Landing extends Component {
 
     if (scrollTop > 0) {
       this.isScrolled = true;
+      this.forceUpdate();
     } else {
       this.isScrolled = false;
+      this.forceUpdate();
     }
-    this.forceUpdate();
   }
 
   isScrolled = false;
 
   render() {
     return (
-      <div className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
+      <div style={{height: this.state.height}} className={`d-flex landing ${this.isScrolled ? 'landing-scrolled' : ''}`}>
         <div className='d-flex justify-content-center flex-column landing-left'>
           <h1 className='d-flex flex-column'>
             <span>{"Hello,"}</span>
@@ -40,7 +49,7 @@ class Landing extends Component {
             <span>{"and create unique projects."}</span>
           </h3>
         </div>
-        <div className='d-flex justify-content-center landing-cta'>
+        <div style={{top: this.state.height * 0.85}} className='d-flex justify-content-center landing-cta'>
           <Link to='/#about' className='d-flex flex-column align-items-center'>
             <p>{'more about me'}</p>
             <img src={downArrow} alt='down arrow' />
