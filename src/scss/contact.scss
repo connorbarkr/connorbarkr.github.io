@@ -271,7 +271,25 @@
   }
 }
 
-@media only screen and (min-width: 370px) and (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .contact {
+    &-left {
+      h1 {
+        font-size: 3.5em;
+      }
+    }
+    &-field {
+      input, textarea {
+        font-size: 3em;
+      }
+    }
+    &-button {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
   .contact {
     &-left {
       h1 {
@@ -289,7 +307,7 @@
   }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 350px) {
   .contact {
     &-left {
       h1 {

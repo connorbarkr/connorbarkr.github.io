@@ -23,7 +23,7 @@ export const PROJECTS = [
     img: 'tictactoe',
     title: 'tictactoe',
     link: 'https://github.com/connorbarkr/tictactoe',
-    what: 'The tictactoe program is pretty self-explanatory; it\'s a game of tictactoe I built in Python as part of a job application! Building it was quite fun, as I was constrained by a one-hour time limit, so my solutions to problems I encountered had to be effective and relatively simple to implement while remaining very fast.',
+    what: 'The tictactoe program is pretty self-explanatory; it\'s a game of tictactoe I built in Python as part of a job application. Building it was quite fun, as I was constrained by a one-hour time limit, so my solutions to problems I encountered had to be effective and relatively simple to implement while remaining very fast.',
     how: 'The game is written in Python, and lacks a GUI (so it needs to be played on the command line). The board is stored as an array of strings, and asks the user to input a number between 1 and 9, which it uses to retrieve the index of the spot the user selects. The opponent\'s moves are totally randomized.',
     challenges: 'The biggest challenge for this project was definitely the time limit - while the code itself is relatively simple, the 1 hour time limit forced me to plan exactly what I wanted to do before I started in order to expedite the decision-making process for how I wanted to implement features like storing the board, choosing a team, and playing against an opponent.',
   },

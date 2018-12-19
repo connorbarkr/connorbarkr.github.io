@@ -108,7 +108,28 @@
   }
 }
 
-@media only screen and (min-width: 370px) and (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .experience {
+    h1 {
+      font-size: 2.25em;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1em;
+      margin-bottom: 0.5rem;
+    }
+    &-content {
+      p {
+        font-size: 0.85em;
+      }
+    }
+    img {
+      height: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
   .experience {
     h1 {
       font-size: 2em;
@@ -129,7 +150,7 @@
   }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 350px) {
   .experience {
     h1 {
       font-size: 1.5em;
