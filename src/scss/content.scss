@@ -48,10 +48,11 @@
       }
     }
     &-right {
-      height: 70%;
+      height: auto;
       width: 90%;
       padding: 0px;
       justify-content: space-evenly;
+      margin-top: 3rem;
     }
   }
 }

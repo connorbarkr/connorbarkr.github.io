@@ -51,7 +51,7 @@ export const PROJECTS = [
     title: 'PhotoGallery',
     link: 'https://github.com/connorbarkr/PhotoGallery',
     what: 'PhotoGallery is a wrapper for the photo-sharing platform Flickr. It\'s an Android app that I designed and built myself, and uses the Flickr API as well as functionality like dynamic image loading and image searching based on title and keyword.',
-    how: 'PhotoGallery is build in Java and XML in Android Studio. The app itself uses several practices to increase the speed of actions like scrolling and searching through images. In order to retrieve images on load or on search, the app calls the RESTful Flickr API endpoints that correspond to these actions. It also uses a RecyclerView to increase render speed when the user scrolls through a list of photos.',
+    how: 'PhotoGallery is built in Java and XML in Android Studio. The app itself uses several practices to increase the speed of actions like scrolling and searching through images. In order to retrieve images on load or on search, the app calls the RESTful Flickr API endpoints that correspond to these actions. It also uses a RecyclerView to increase render speed when the user scrolls through a list of photos.',
     challenges: 'This was the first app I built for Android, and as such was both very educational and very challenging. Challenges included learning the best general practices for Android, such as modular code, as well as more specific things like the use of a RecyclerView or correctly styling the app using XML. Learning to work with HTTP requests was also difficult, although I overcame all of these challenges through reading and (most importantly) good old-fashioned trial and error.',
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS = [
     title: 'asciify',
     link: 'https://github.com/connorbarkr/ASCIIfy',
     what: 'ASCIIfy is an extension for the web browser Google Chrome. When activated, it replaces all images on a webpage (within a certain limit) with ASCII art versions of themselves, that have been slightly colorized and scaled to fit so that the layout of the page isn\'t compromised and all text remains legible. The art can also be copy-pasted to preserve it for future use.',
-    how: 'ASCIIfy is build entirely in JavaScript, using the Chrome extension framework. It parses images in blocks of pixels, finding their average greyscale and color values. It uses the greyscale values to find an ASCII character equivalent, which it colors using the average color value of that square of pixels. It then uses jQuery to replace the image on the webpage with a text box, populated with the stitched-together ASCII characters retrieved earlier.',
+    how: 'ASCIIfy is built entirely in JavaScript, using the Chrome extension framework. It parses images in blocks of pixels, finding their average greyscale and color values. It uses the greyscale values to find an ASCII character equivalent, which it colors using the average color value of that square of pixels. It then uses jQuery to replace the image on the webpage with a text box, populated with the stitched-together ASCII characters retrieved earlier.',
     challenges: 'The main challenge in this process was circumventing the cross-origin policies Chrome puts in place (CORS). This was problematic because CORS prevents reading image data that didn\'t originate on the domain the user is on. I got around this by copying the image data to a new image, and manually resetting the image\'s origin to \'anonymous\', then reading the pixel data from the new image instead of the original.',
   },
   {
@@ -79,7 +79,7 @@ export const EXPERIENCES = [
     name: 'Konrad Group',
     title: 'web developer',
     dates: 'September - December 2018',
-    p1: 'My most recent co-op experience has been at the Konrad Group, a digital design and development firm which has build products for Spotify, MTV, McDonalds, and many more. I worked as a frontend web developer during my time on the team.',
+    p1: 'My most recent co-op experience has been at the Konrad Group, a digital design and development firm which has built products for Spotify, MTV, McDonalds, and many more. I worked as a frontend web developer during my time on the team.',
     p2: 'I worked extensively with technologies such as React, NodeJS, Jest, and Enzyme to both construct and test components, features, and pages using the latest React practices, such as contexts and new lifecycle methods.',
     p3: 'Aside from constructing new components and features, I worked on cross-browser compatibility, responsive design, and extensive unit-testing using Jest and Enzyme.',
   },
