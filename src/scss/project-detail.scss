@@ -29,7 +29,7 @@
     border-bottom: 1px solid $main-red;
     height: 35%;
 
-    h1 {
+    &-title {
       margin: 0rem;
       bottom: 0;
       right: 0;
@@ -40,6 +40,11 @@
       img {
         margin-right: 1rem;
       }
+    }
+
+    &-title:hover {
+      color: $main-red;
+      text-decoration: none;
     }
 
     &-back {

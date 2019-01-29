@@ -78,7 +78,7 @@ export const EXPERIENCES = [
   {
     name: 'Konrad Group',
     title: 'web developer',
-    dates: 'September - December 2018',
+    dates: 'september - december 2018',
     p1: 'My most recent co-op experience has been at the Konrad Group, a digital design and development firm which has built products for Spotify, MTV, McDonalds, and many more. I worked as a frontend web developer during my time on the team.',
     p2: 'I worked extensively with technologies such as React, NodeJS, Jest, and Enzyme to both construct and test components, features, and pages using the latest React practices, such as contexts and new lifecycle methods.',
     p3: 'Aside from constructing new components and features, I worked on cross-browser compatibility, responsive design, and extensive unit-testing using Jest and Enzyme.',
@@ -86,7 +86,7 @@ export const EXPERIENCES = [
   {
     name: 'Portal',
     title: 'fullstack developer',
-    dates: 'January - April 2018',
+    dates: 'january - april 2018',
     p1: 'During my time on the Portal developer team, I worked with a variety of environments, languages, and platforms. My responsibilities included building an analytics tracker from scratch.',
     p2: 'I also redesigned the CECA (UWaterloo’s center for Co-operative Education & Career Action) paging system, using JavaScript and HTML/CSS. This process included the creation of new functionality for the system, such as the ability to edit interview timeslots, message students, and more.',
     p3: 'I also attended weekly Agile SCRUM meetings, used Jira to track task completion, and participated in storyboarding meetings once every three-week sprint.',

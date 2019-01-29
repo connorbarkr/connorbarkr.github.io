@@ -8,13 +8,14 @@ import '../scss/content.scss';
 import '../scss/_variables.scss';
 
 import {PROJECTS} from '../utils/constants';
+import {scrollTo} from '../utils/scrollTo.js';
 import {getProjectIndex} from '../utils/projectApi.js';
 import {isMobile} from '../utils/detectMobile.js';
 import siren from '../assets/siren.svg';
 import code from '../assets/code.svg';
 import how from '../assets/how.svg';
 import arrow from '../assets/down-arrow.svg';
-import github_r from '../assets/github-logo_r.svg';
+import link_r from '../assets/link_r.svg';
 
 import Header from './Header';
 
@@ -32,6 +33,7 @@ class ProjectDetail extends Component {
   componentDidMount() {
     window.previousLocation = 'project';
     this.getProjectDetails(this.props);
+    scrollTo(0, 'auto');
   }
 
   getProjectDetails = (props) => {
@@ -54,10 +56,15 @@ class ProjectDetail extends Component {
               <img src={arrow} className='icon-xxs button-left' alt='left arrow' />
               <p>{'back to projects'}</p>
             </Link>
-            <h1>{isMobile('lg') ? null :
-              <a href={project ? project.link : null}>
-                <img className='icon-xs' src={github_r} alt='github'/>
-              </a>}{project ? project.title : null}</h1>
+            {isMobile('lg') ?
+              <h1 className='project-detail__header-title'>
+                {project ? project.title : null}
+              </h1> :
+              <a className='project-detail__header-title' href={project ? project.link : null}>
+                <img className='icon-xs' src={link_r} alt='link'/>
+                {project ? project.title : null}
+              </a>
+            }
           </div>
           {isMobile('lg') ?
             <ProjectDetailCarousel project={project} /> :

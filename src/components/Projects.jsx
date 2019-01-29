@@ -80,6 +80,8 @@ class Projects extends Component {
         </div>
         <div className='d-flex align-items-center flex-column content-right'>
           {this.renderProjects(PROJECTS)}
+          {isMobile('lg') ? <p className='mobile-project-label'>{"tap on one to learn more about it"}</p> :
+            <p className='desktop-project-label'>{"click on one to learn more about it"}</p>}
         </div>
       </div>
     );
