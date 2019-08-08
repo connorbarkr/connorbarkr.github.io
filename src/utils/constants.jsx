@@ -77,9 +77,17 @@ export const PROJECTS = [
 export const EXPERIENCES = [
   {
     name: 'Konrad Group',
+    title: 'machine learning developer',
+    dates: 'may - august 2019',
+    p1: 'My most recent co-op experience was my second time working for the Konrad Group. During my four months with them, I worked as an iOS and machine learning developer, working primarily with Swift and Python to develop an ML-based iOS app.',
+    p2: 'I started my internship by training convolutional neural networks and regression models to accomplish tasks like predicting house prices or diabetes diagnoses. I then designed and wrote Python scripts to convert Keras neural networks to Apple\'s .mlmodel format.',
+    p3: 'I used these models, along with the new Core ML 3 beta, to design and develop an iOS 13 app which allows a user to draw digits and then predict which number they wrote. The app also features on-device retraining, personalizing it to a user\'s handwriting.',
+  },
+  {
+    name: 'Konrad Group',
     title: 'web developer',
     dates: 'september - december 2018',
-    p1: 'My most recent co-op experience has been at the Konrad Group, a digital design and development firm which has built products for Spotify, MTV, McDonalds, and many more. I worked as a frontend web developer during my time on the team.',
+    p1: 'This was my first time working for the Konrad Group, a digital design and development firm which has built products for Spotify, MTV, McDonalds, and many more. I worked as a frontend web developer during my time on the team.',
     p2: 'I worked extensively with technologies such as React, NodeJS, Jest, and Enzyme to both construct and test components, features, and pages using the latest React practices, such as contexts and new lifecycle methods.',
     p3: 'Aside from constructing new components and features, I worked on cross-browser compatibility, responsive design, and extensive unit-testing using Jest and Enzyme.',
   },
