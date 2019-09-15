@@ -40,7 +40,7 @@ class ContactForm extends Component {
     this.setState({sending: true}, () => {
       axios({
         method: 'POST',
-        url : 'https://google.com/', //nice try fbi
+        url : 'www.google.com', //nice try fbi
         data: {
           name: name,
           email: email,

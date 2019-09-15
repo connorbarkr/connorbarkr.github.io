@@ -57,7 +57,7 @@ class Landing extends Component {
             <a href='https://www.linkedin.com/in/connor-barker-a49431146/'>
               <img className='icon-xs' src={linkedin} alt='linkedin'/>
             </a>
-            <a href='https://www.instagram.com/eskimopies/?hl=en'>
+            <a href='https://www.instagram.com/connorbarkr/?hl=en'>
               <img className='icon-xs' src={instagram} alt='instagram'/>
             </a>
           </div>
