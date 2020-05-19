@@ -1,6 +1,6 @@
 export const TABS = [{value: 'about'}, {value: 'experience'}, {value: 'projects'}, {value: 'resume'}, {value: 'contact'}];
 
-export const INTRO = 'Hey there! I’m Connor, a Computer Engineering student at the University of Waterloo. I\'m also a programmer, both professionally and as a hobby. In my free time, I like playing guitar, skateboarding, and hunting for the best coffee in Toronto. Get in touch to ask about co-op, freelancing, or just to talk!';
+export const INTRO = 'Hey there! I’m Connor, a Computer Engineering student at the University of Waterloo. I\'m also a programmer, both professionally and as a hobby. In my free time, I like playing guitar, practicing my photography, and playing around with fashion and digital art. Get in touch using the contact form below to ask about co-op, freelancing, or just to talk.';
 
 export const PROJECT_DETAIL = [
   {
@@ -76,10 +76,18 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
+    name: 'Zynga',
+    title: 'game developer',
+    dates: 'january - april 2020',
+    p1: 'My most recent co-op experience was as a software engineer for mobile games company Zynga. Over the course of this internship, I further developed my software skills as an iOS developer working in both Objective-C and Swift.',
+    p2: 'My responsibilities at Zynga primarily focused on developing new features for the app Boggle. I carried out standard bug-fixing tasks and minor updates, as well as a larger-scale project that involved redesigning a central screen to better support upcoming features.',
+    p3: 'Many of the challenges I faced during this co-op involved the stack, which was written primarily in Obj-C (with which I was unfamiliar) and included a fair amount of legacy code. A common difficulty was getting modern Swift code to work well with older parts of the stack.',
+  },
+  {
     name: 'Konrad Group',
     title: 'machine learning developer',
     dates: 'may - august 2019',
-    p1: 'My most recent co-op experience was my second time working for the Konrad Group. During my four months with them, I worked as an iOS and machine learning developer, working primarily with Swift and Python to develop an ML-based iOS app.',
+    p1: 'This was my second time working for the Konrad Group. During my four months with them, I worked as an iOS and machine learning developer, working primarily with Swift and Python to develop an ML-based iOS app.',
     p2: 'I started my internship by training convolutional neural networks and regression models to accomplish tasks like predicting house prices or diabetes diagnoses. I then designed and wrote Python scripts to convert Keras neural networks to Apple\'s .mlmodel format.',
     p3: 'I used these models, along with the new Core ML 3 beta, to design and develop an iOS 13 app which allows a user to draw digits and then predict which number they wrote. The app also features on-device retraining, personalizing it to a user\'s handwriting.',
   },
