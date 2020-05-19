@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import { contactAPI }  from '../../utils/urls';
+
 import '../../scss/contact.scss';
 
 class ContactForm extends Component {
@@ -40,7 +42,7 @@ class ContactForm extends Component {
     this.setState({sending: true}, () => {
       axios({
         method: 'POST',
-        url : 'www.google.com', //nice try fbi
+        url : contactAPI, //nice try fbi
         data: {
           name: name,
           email: email,
