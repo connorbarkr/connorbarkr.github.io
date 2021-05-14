@@ -4,7 +4,7 @@ import '../scss/about.scss';
 import '../scss/content.scss';
 import '../scss/_variables.scss';
 
-import profilePic from '../assets/website_profile.JPG';
+import profilePic from '../assets/website_profile.jpg';
 import {INTRO} from '../utils/constants';
 import {isMobile} from '../utils/detectMobile.js';
 

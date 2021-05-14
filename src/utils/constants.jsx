@@ -76,10 +76,18 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
+    name: 'Konrad Group',
+    title: 'fullstack developer',
+    dates: 'september - december 2020',
+    p1: 'This was my third and most recent internship with the Konrad Group, during which I worked as the lead developer on an internal project. Recently, as the company has grown, the number of employees has exceeded the capacity of many of the systems they have in place',
+    p2: 'As a result, an update of a number of internal tools has been required to handle the increased load. I was assigned to redesign the timesheet tracker website that employees use to log their billable hours.',
+    p3: 'I was able to decrease the loading times of the website by roughly 8-10x, by refactoring the SQL database by adding foreign constraints and new indices to reduce search time, and switching the API over to GraphQL.',
+  },
+  {
     name: 'Zynga',
     title: 'game developer',
     dates: 'january - april 2020',
-    p1: 'My most recent co-op experience was as a software engineer for mobile games company Zynga. Over the course of this internship, I further developed my software skills as an iOS developer working in both Objective-C and Swift.',
+    p1: 'My 5th co-op experience was as a software engineer for mobile games company Zynga. Over the course of this internship, I further developed my software skills as an iOS developer working in both Objective-C and Swift.',
     p2: 'My responsibilities at Zynga primarily focused on developing new features for the app Boggle. I carried out standard bug-fixing tasks and minor updates, as well as a larger-scale project that involved redesigning a central screen to better support upcoming features.',
     p3: 'Many of the challenges I faced during this co-op involved the stack, which was written primarily in Obj-C (with which I was unfamiliar) and included a fair amount of legacy code. A common difficulty was getting modern Swift code to work well with older parts of the stack.',
   },
