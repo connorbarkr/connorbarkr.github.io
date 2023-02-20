@@ -1,3 +1,5 @@
+# Warning: Now deprecated!
+
 # Project overview
 
 ## Design
